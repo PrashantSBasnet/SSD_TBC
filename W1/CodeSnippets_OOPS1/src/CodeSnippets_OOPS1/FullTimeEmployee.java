@@ -21,5 +21,6 @@ public class FullTimeEmployee extends Employee {
 	public void haveLunch() {
 		System.out.println("FullTimeEmployee is having lunch");
 	}
+	
 
 }

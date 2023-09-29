@@ -7,6 +7,8 @@ package CodeSnippets_OOPS1;
  * They can extend other abstract or regular class
  * Sub classes that extend an abstract class must provide concrete implementations for all the abstract methods
  * .. declared in the abstract class. Failure to do so will result in compilation error
+ * 
+ * 
  * @author prashantsingh.basnet
  *
  */

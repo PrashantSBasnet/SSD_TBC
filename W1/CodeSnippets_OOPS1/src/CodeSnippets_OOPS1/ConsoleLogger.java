@@ -7,7 +7,4 @@ public class ConsoleLogger implements MessageLogger{
 		System.out.println("Console logger message");
 		
 	}
-
-
-
 }
