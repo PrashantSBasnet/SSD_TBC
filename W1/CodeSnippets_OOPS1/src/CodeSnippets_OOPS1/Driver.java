@@ -32,6 +32,7 @@ public class Driver {
        * The method to be called is determined at runtime based on the actual object's type.
        * Dynamic binding is used when method overriding is involved, allowing subclasses to provide their own implementations of methods declared in a superclass.
        * It is also referred to as runtime binding because the binding occurs when the program is executing.
+       * It allows more flexibility and polymorphic behavior in the object oriented programming 
        */
 		
 		
@@ -56,6 +57,13 @@ public class Driver {
 		ConsoleLogger consoleLogger = new ConsoleLogger();
 		consoleLogger.writeMessage();
 		consoleLogger.logMessage("This is for test");
+		
+		
+		//Since both of these classes implement the same interface
+		//object type is MessageLogger
+		MessageLogger msgLogger = new ConsoleLogger();
+		MessageLogger detailLogger = new DetailLogger();
+		
 		
 		
 		/**Abstract class Example **/
