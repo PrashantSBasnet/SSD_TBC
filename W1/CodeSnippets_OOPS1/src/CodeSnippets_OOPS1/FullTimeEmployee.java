@@ -15,10 +15,11 @@ public class FullTimeEmployee extends Employee {
 	public String toString() {
 		return "FullTime Employee [id=" + id + ", name=" + name + ", jobTitle=" +jobTitle+"]";
 	}
-
 	
 	
-	
-	
+	@Override
+	public void haveLunch() {
+		System.out.println("FullTimeEmployee is having lunch");
+	}
 
 }

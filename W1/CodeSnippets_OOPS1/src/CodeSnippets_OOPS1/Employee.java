@@ -1,6 +1,6 @@
 package CodeSnippets_OOPS1;
 
-public class Employee {
+public class Employee extends Person {
 	
 	public int id; 
 	public String name; 

@@ -10,16 +10,6 @@ public class Person {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/**
 	 * --getter and setters -- auto generated
 	 */
@@ -54,6 +44,18 @@ public class Person {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	
+	
+	//methods 
+	
+	public void haveLunch() {
+		System.out.println("Person is having lunch");
+	}
+	
+	public void drinkWater() {
+		System.out.println("Person is drinking water");
 	}
 
 	
