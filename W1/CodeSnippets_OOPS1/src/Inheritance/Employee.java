@@ -16,6 +16,10 @@ public class Employee extends Person {
 		return "Employee [id=" + id + ", name=" + name + "]";
 	}
 	
+	//super keyword can be used to refer to the parent class, even if no object of the parent exists
+	void referToParentUsingsuper() {
+		super.drinkWater();
+	}
 
 	
 

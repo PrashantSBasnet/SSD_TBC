@@ -3,7 +3,7 @@ package Inheritance;
 public class Person {
 
 	private int id;  //only accessible in Person class (-)
-	protected int age; //accessible in package or sub-class (#)
+	protected int age; //accessible in package or sub-class (#) 
 
 	public String address; //accessible everywhere (+)
 	String name; //default -> accessible in this package 
