@@ -1,4 +1,4 @@
-package CodeSnippets_OOPS1;
+package Polymorphism;
 
 /**
  * more than one form
@@ -41,38 +41,9 @@ public class PolymorphismExample {
 }
 
 
-/**example1*/
-class Animal {
-
-	 void makeSound() {
-	        System.out.println("Animal makes a sound");
-	    }
-}
-
-class Dog extends Animal {
-   @Override
-   void makeSound() {
-       System.out.println("Dog barks");
-   }
-}
 
 
-class Cat extends Animal{
-	 @Override
-	    void makeSound() {
-	        System.out.println("Cat meows");
-	    }
-}
 
 
-/**example2*/
-class Calculator {
-    int add(int a, int b) {
-        return a + b;
-    }
-    
-    double add(double a, double b) {
-    	return a+b;
-    }
-    
-}
+
+

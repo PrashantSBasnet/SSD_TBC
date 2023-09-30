@@ -1,4 +1,4 @@
-package CodeSnippets_OOPS1;
+package Inheritance;
 
 public class Person {
 
@@ -6,7 +6,7 @@ public class Person {
 	protected int age; //accessible in package or sub-class (#)
 
 	public String address; //accessible everywhere (+)
-	String name; //default -- accessible in this package 
+	String name; //default -> accessible in this package 
 	
 	
 	

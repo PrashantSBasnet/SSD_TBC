@@ -1,4 +1,10 @@
-package CodeSnippets_OOPS1;
+package Inheritance;
+
+import Abstraction.Circle;
+import Interface.ConsoleLogger;
+import Interface.DetailLogger;
+import Interface.MessageLogger;
+
 /**
  * OOPS -  Reusability, modularity, and maintainability
  * @author prashantsingh.basnet
@@ -52,24 +58,6 @@ public class Driver {
 		fullTimeEmployee.haveLunch(); 
 		fullTimeEmployee.drinkWater(); //will get parent's method because not @Override
 		
-		
-		/**Interface Examples**/
-		ConsoleLogger consoleLogger = new ConsoleLogger();
-		consoleLogger.writeMessage();
-		consoleLogger.logMessage("This is for test");
-		
-		
-		//Since both of these classes implement the same interface
-		//object type is MessageLogger
-		MessageLogger msgLogger = new ConsoleLogger();
-		MessageLogger detailLogger = new DetailLogger();
-		
-		
-		
-		/**Abstract class Example **/
-		Circle circle = new Circle (6.0);
-		circle.displayInfo(); //inheritance
-		System.out.println("Circle Area:" + circle.calculateArea());
 
 	}
 

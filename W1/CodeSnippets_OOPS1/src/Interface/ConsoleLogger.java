@@ -1,4 +1,4 @@
-package CodeSnippets_OOPS1;
+package Interface;
 
 public class ConsoleLogger implements MessageLogger{
 
