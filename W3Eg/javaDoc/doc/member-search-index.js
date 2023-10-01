@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"javaDocSample","c":"Driver","l":"add(int, int)","u":"add(int,int)"},{"p":"javaDocSample","c":"Driver","l":"Driver()","u":"%3Cinit%3E()"},{"p":"javaDocSample","c":"Driver","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
