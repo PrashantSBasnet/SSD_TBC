@@ -8,8 +8,6 @@ public class Person {
 	public String address; //accessible everywhere (+)
 	String name; //default -> accessible in this package 
 	
-	
-	
 	/**
 	 * --getter and setters -- auto generated
 	 */
@@ -57,6 +55,4 @@ public class Person {
 	public void drinkWater() {
 		System.out.println("Person is drinking water");
 	}
-
-	
 }

@@ -11,10 +11,10 @@ public class FullTimeEmployee extends Employee {
 	 * "Super" reference can be used to refer to the parent class, and often is used to invoke the parent's constructor
 	 */
 	
-//	//super because you cannot have FullTimeEmployee without having an Employee
-//	FullTimeEmployee(int id, String name) {
-//		super(id, name); //creating Employee
-//	}
+	//super because you cannot have FullTimeEmployee without having an Employee
+	  FullTimeEmployee(int id, String name) {
+		super(id, name); //creating Employee
+	}
 	
 	//also adding jobTitle
 	FullTimeEmployee(int id, String name, String jobTitle) {
@@ -34,7 +34,7 @@ public class FullTimeEmployee extends Employee {
 		System.out.println("FullTimeEmployee is having lunch");
 	}
 	
-	//in this case you will get that of Parent as it is in the 
+	//in this case you will get that of Parent as it is in the top level
 	void referParentUsingsuper() {
 		 super.drinkWater();
 	}

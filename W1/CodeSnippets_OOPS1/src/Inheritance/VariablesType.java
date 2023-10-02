@@ -38,7 +38,4 @@ public class VariablesType {
 		 */
 		int localVar = 10; 
 	}
-	
-	
-
 }

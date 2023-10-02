@@ -48,39 +48,36 @@ public class Driver {
 		
 		
 		//via constructor
-		Employee employee = new Employee(1, "Ram");
-		System.out.println(employee.toString());
+		//Employee employee = new Employee(1, "Ram");
+		//System.out.println(employee.toString());
 		
 		//super class methods via sub class
-		employee.drinkWater(); 
-		employee.haveLunch(); 
+		//employee.drinkWater(); 
+		//employee.haveLunch(); 
 	
 		
 		
-		Employee emp2 = new FullTimeEmployee(2, "AnotherEmployee", "DBA"); //Upcasting
-		System.out.println("\n");
-		System.out.println("----Via Upcasting---");
-	    emp2.haveLunch(); //calls the haveLunch() method of FullTimeEmployee at the run time /dynamic binding /run time
-	    System.out.println("------------------");
-		
+		//Employee emp2 = new FullTimeEmployee(2, "AnotherEmployee", "DBA"); //Upcasting
+	
+	    //emp2.haveLunch(); //calls the haveLunch() method of FullTimeEmployee at the run time /dynamic binding /run time
+	   
 	    /**---------------------------*/
 	  
 	    //child class
-		FullTimeEmployee fullTimeEmployee = new FullTimeEmployee(1, "NewEmployee", "Software Engineer");
-		System.out.println(fullTimeEmployee.toString());
+		//FullTimeEmployee fullTimeEmployee = new FullTimeEmployee(1, "NewEmployee", "Software Engineer");
+		//System.out.println(fullTimeEmployee.toString());
 		
-		System.out.println("\n");
-		System.out.println("FullTimeEmployee Class:"); 
-		fullTimeEmployee.referParentUsingsuper();
-		System.out.println("\n");
+		 
+		//fullTimeEmployee.referParentUsingsuper();
+		
 		
 		
 		//overridden method call
-		fullTimeEmployee.haveLunch(); 
-		fullTimeEmployee.drinkWater(); //will get parent's method because not @Override
+		//fullTimeEmployee.haveLunch(); 
+		//fullTimeEmployee.drinkWater(); //will get parent's method because not @Override
 		
 		
-		 /** 
+		/** 
 	       * Dynamic Binding
 	       * --Method Overriding 
 	       * --RunTime
@@ -97,7 +94,5 @@ public class Driver {
 		 * --Compile Time
 		 */
 		
-
 	}
-
 }

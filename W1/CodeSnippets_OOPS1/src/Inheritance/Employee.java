@@ -20,7 +20,4 @@ public class Employee extends Person {
 	void referToParentUsingsuper() {
 		super.drinkWater();
 	}
-
-	
-
 }
