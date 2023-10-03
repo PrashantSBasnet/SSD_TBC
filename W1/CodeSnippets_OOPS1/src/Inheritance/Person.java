@@ -3,7 +3,7 @@ package Inheritance;
 public class Person {
 
 	private int id;  //only accessible in Person class (-)
-	protected int age; //accessible in package or outside of the package through child class
+	protected int age; //accessible in package or outside of the package through child class (inherited class)
 
 	public String address; //accessible everywhere (+)
 	String name; //default -> accessible in this package 
@@ -50,10 +50,10 @@ public class Person {
 	//methods 
 	
 	public void haveLunch() {
-		System.out.println("Person is having lunch");
+		System.out.println("Person Class haveLunch()");
 	}
 	
 	public void drinkWater() {
-		System.out.println("Person is drinking water");
+		System.out.println("Person Class drinkWater()");
 	}
 }

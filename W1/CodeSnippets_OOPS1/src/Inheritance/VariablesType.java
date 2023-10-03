@@ -10,6 +10,13 @@ public class VariablesType {
 	 */
 	int instanceVar;
 	
+	/**
+	 * Values that are not initialized explicitly at the class level are implicitly initialized as: 
+	 * 0- int, long, and short
+	 * 0.0- float, double
+	 * False- Boolean
+	 * Null- reference types
+	 */
 	
 	/**
 	 * Static Variables (Class Variables)
@@ -29,7 +36,12 @@ public class VariablesType {
 	
 	final int MY_CONSTANT =42;
 	
-	
+	/**
+	 * Method with return type - return the object or null
+	 * Method with void - not allowed to return anything
+	 * Variables declared inside the method must be initialized before using them
+	 * Unlike class variables or class instance variables, variables inside methods are not initialized automatically
+	 */
 	void exampleMethod() {
 		/**
 		 * Local Variables
@@ -37,5 +49,7 @@ public class VariablesType {
 		 * have limited scope and exist only within the block in which they are declared
 		 */
 		int localVar = 10; 
+		
 	}
+	
 }

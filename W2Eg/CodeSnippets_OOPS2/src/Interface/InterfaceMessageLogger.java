@@ -5,11 +5,11 @@ package Interface;
  * @author prashantsingh.basnet
  *
  */
-public interface MessageLogger {
+public interface InterfaceMessageLogger {
 
 	void logMessage(String message); //public by default in an Interface
 	
 	default void writeMessage() {
-		System.out.println("writing");
+		System.out.println("InterfaceMessgageLogger: Method with Body!!");
 	}
 }

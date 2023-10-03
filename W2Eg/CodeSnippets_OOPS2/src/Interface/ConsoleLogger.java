@@ -1,6 +1,6 @@
 package Interface;
 
-public class ConsoleLogger implements MessageLogger{
+public class ConsoleLogger implements InterfaceMessageLogger{
 
 	@Override
 	public void logMessage(String message) {

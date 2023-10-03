@@ -34,9 +34,15 @@ public class FullTimeEmployee extends Employee {
 		System.out.println("FullTimeEmployee is having lunch");
 	}
 	
-	//in this case you will get that of Parent as it is in the top level
-	void referParentUsingsuper() {
+	//super keyword refers to the superclass(parent) objects
+	void useOfsuper() {
 		 super.drinkWater();
+	}
+	
+	@Override
+	public void doWork() {
+		super.doWork();
+		System.out.println("FullTimeEmployee Class: block of code");
 	}
 	
 

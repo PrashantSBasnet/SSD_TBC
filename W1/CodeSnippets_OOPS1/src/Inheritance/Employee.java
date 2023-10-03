@@ -6,9 +6,17 @@ public class Employee extends Person{
 	public String name; 
 	
 	//Constructor
+	//Constructor does not create an object. It initializes the state of the object. 
+	//Constructor cannot be: static, synchronized, abstract or final
+	//If no constructor created, java compiler calls the default constructor Example: Employee(){}
+	
 	Employee(int id, String name){
 		this.id = id; 
 		this.name= name;
+	}
+	
+	//Constructor overloading
+	Employee(String x, int y, double z){		
 	}
 
 	@Override
@@ -16,8 +24,12 @@ public class Employee extends Person{
 		return "Employee [id=" + id + ", name=" + name + "]";
 	}
 	
-	//super keyword can be used to refer to the parent class, even if no object of the parent exists
-	void referToParentUsingsuper() {
-		super.drinkWater();
+	public void drinkWater() {
+		System.out.println("Employee Class drinkWater()");
 	}
+	
+	public void doWork() {
+		System.out.println("Employee Class doWork()");
+	}
+	
 }

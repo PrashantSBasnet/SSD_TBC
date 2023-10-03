@@ -8,7 +8,7 @@ public abstract class AbstractShape {
 		System.out.println("This is a shape.");
 	}
 	
-	 // Abstract method that subclasses must implement
+    // Abstract method that subclasses must implement
     public abstract double calculateArea();
 }
 

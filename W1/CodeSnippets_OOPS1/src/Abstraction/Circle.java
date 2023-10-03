@@ -1,6 +1,6 @@
 package Abstraction;
 
-
+/**Normal class is called a concrete class*/
 public class Circle extends AbstractShape{
 
 	private double radius;

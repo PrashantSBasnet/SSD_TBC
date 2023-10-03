@@ -8,6 +8,7 @@ public class Driver {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Please enter a sentence");
 		String sentence = s.nextLine();
+		
 		//Create an instance, ok to use Counter as the type since the WordProcessor is a typeof Counter
 		Counter wp = new WordProcessor();
 		

@@ -4,7 +4,14 @@ package Interface;
 /**
  * 
  * Interface is not a class, it is a blueprint for a class
+ * Interface are somewhat similar to abstract class
+ *  
  * 
+ * Interfaces are unable to provide the implementations of any methods
+ * --They provide pure abstraction. Implementing classes define the methods they have implemented. Polymorphism
+ * --Multiple inheritance in java is possible through interfaces. if methods implementations are provided by interfaces, it can lead into ambiguity
+ * --Encapsulation by forcing implementing classes to provide their own logic. Thus, separation of concerns and Modular programming
+ * Classes do not extend Interfaces, they implement them
  * 
  * It specifies set of methods that the class must implement
  * It has no constructors
@@ -12,7 +19,6 @@ package Interface;
  * 
  * Java Interface is a collection of abstract methods and constants
  * An abstract method is a method header without a method body
- * Since all the methods in an interface 
  * 
  * Objects of Interface cannot be created
  * Interface must be implemented
@@ -20,9 +26,16 @@ package Interface;
  * Interfaces provide a mechanism of declaring methods without any implementation code
  * Use of interfaces reduces "coupling" and allows independent development of different parts of a system
  * 
- * 
  * Use or interfaces is an alternative to class based inheritance, and allows looser coupling of implementation code
  * Achieved by using implements keyword after the class name that is implementing the Interface
+ * 
+ * 
+ * Interfaces -Rules 
+ * 1. Public interface should be defined in a file matching the interface name
+ * 2. Members of interface are implicitly abstract and public
+ * 3. Access modifiers can be explicitly added
+ * 4. If modifiers are not definied, it is public!
+ * 5. 
  * 
  * keyword used: Interface, implements
  * @author prashantsingh.basnet
@@ -34,17 +47,22 @@ public class Driver {
 		
 		/**Interface Examples**/
 		ConsoleLogger consoleLogger = new ConsoleLogger();
-		consoleLogger.writeMessage();
 		consoleLogger.logMessage("This is for test");
+		
+		DetailLogger dl = new DetailLogger ();
+		dl.writeMessage();
 		
 		
 		//Since both of these classes implement the same interface
 		//object type is MessageLogger
-		MessageLogger msgLogger = new ConsoleLogger();
-		MessageLogger detailLogger = new DetailLogger();
+		InterfaceMessageLogger msgLogger = new ConsoleLogger();
+		InterfaceMessageLogger detailLogger = new DetailLogger();
 		
 		
-		//Examples of Interaces in Java API
+
+		
+		
+		//Examples of Interfaces in Java API
 		//Comparable Interface
 		
 		

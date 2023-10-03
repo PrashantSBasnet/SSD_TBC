@@ -1,7 +1,7 @@
 package Interface;
 
 
-public interface InfoLogger {
+public interface InterfaceInfoLogger {
 
 	void maintainInformation();
 	

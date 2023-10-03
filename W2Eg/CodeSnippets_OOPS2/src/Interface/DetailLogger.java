@@ -1,7 +1,7 @@
 package Interface;
 
 
-public class DetailLogger implements MessageLogger {
+public class DetailLogger implements InterfaceMessageLogger {
 
 
 	@Override
@@ -9,6 +9,4 @@ public class DetailLogger implements MessageLogger {
 		// TODO Auto-generated method stub
 		
 	}
-
-	
 }
