@@ -58,14 +58,35 @@ public class PolymorphismExample {
 	
 
 	
-/**Static Binding //static binding/method overloading/compile time binding/println is overridden as it is in Object**/
+
+   /**Static Binding
+      Early Binding/ Compile-time binding
+      System.out.println(), the compiler knows at compile time that it's invoking the println method of the PrintStream class.
+      It is also known as early binding, occurs when the method to be invoked is determined by the compiler at compile time based on the declared types of variables and references
+      Method overloading
+      
+      Why binding of private, static and final methods are always static binding?
+      -because java compiler knows that those methods cannot be ovveriden and will always be referenced by obj reference variables
+
+      In static binding actual objects are not used.
+   **/
 
    /** 
      * Dynamic Binding
+     * Late Binding
      * The method to be called is determined at runtime based on the actual object's type.
      * Dynamic binding is used when method overriding is involved, allowing subclasses to provide their own implementations of methods declared in a superclass.
      * It is also referred to as runtime binding because the binding occurs when the program is executing.
+     * It is commonly associated with method overriding and polymorphism, where the specific implementation of a method is determined based on the actual type of the object at runtime, not the reference type
      * It allows more flexibility and polymorphic behavior in the object oriented programming 
+     * Dynamic binding is not applicable to static methods or methods called on class-level references like System.out
+
+     * Examples: 
+       method overriding
+       using with Interfaces and polymorphism: Interfaces define a contract and multiple classes can implement that interface with their own implmentations
+       'instanceof' operator to check the actual type of an object at runtime before invoking method
+
+       Actual object is used in the dynamic binding.
      */
 		
 
