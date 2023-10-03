@@ -56,11 +56,10 @@ public class PolymorphismExample {
 	}
 	
 	
-	/**Static Binding //static binding/method overriding/compile time binding/println is overridden as it is in Object**/
 
 	
-	
-	
+/**Static Binding //static binding/method overloading/compile time binding/println is overridden as it is in Object**/
+
    /** 
      * Dynamic Binding
      * The method to be called is determined at runtime based on the actual object's type.
