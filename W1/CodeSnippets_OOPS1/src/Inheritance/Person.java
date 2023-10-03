@@ -3,10 +3,11 @@ package Inheritance;
 public class Person {
 
 	private int id;  //only accessible in Person class (-)
-	protected int age; //accessible in package or sub-class (#) 
+	protected int age; //accessible in package or outside of the package through child class
 
 	public String address; //accessible everywhere (+)
 	String name; //default -> accessible in this package 
+	
 	
 	/**
 	 * --getter and setters -- auto generated
@@ -16,9 +17,9 @@ public class Person {
 	public String toString() {
 		return "Person [id=" + id + ", age=" + age + ", address=" + address + ", name=" + name + "]";
 	}
+	
+	
 	/**from Object**/
-	
-	
 	public int getId() {
 		return id;
 	}

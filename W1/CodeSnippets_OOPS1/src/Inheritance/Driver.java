@@ -10,6 +10,12 @@ package Inheritance;
  * .toString() is the defined in the Object class and we override it whenever we define the toString method
  * 
  * 
+ * What is object in Java?
+   A Java object is a member (also called an instance) of a Java class. 
+   Each object has an identity, a behavior and a state. 
+   The state of an object is stored in fields (variables), while methods (functions) display the object's behavior. 
+   Objects are created at runtime from templates, which are also known as classes
+ * 
  * Inheritance allows a software developer to develop a new class from an existing one
  * Existing class is called the parent class, or superclass, or base class
  * Derived class is called the child class or subclass
@@ -48,12 +54,19 @@ public class Driver {
 		
 		
 		//via constructor
-		//Employee employee = new Employee(1, "Ram");
-		//System.out.println(employee.toString());
+		Employee employee = new Employee(1, "Ram");
+		System.out.println(employee.toString());
 		
-		//super class methods via sub class
+		
+		
+		//parent class methods via sub class Obj
+		
 		//employee.drinkWater(); 
 		//employee.haveLunch(); 
+		
+		
+		//use of super keyword
+		//employee.referToParentUsingsuper();
 	
 		
 		

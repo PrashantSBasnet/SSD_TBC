@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class Employee extends Person {
+public class Employee extends Person{
 	
 	public int id; 
 	public String name; 
