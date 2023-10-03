@@ -90,22 +90,5 @@ public class Driver {
 		//fullTimeEmployee.drinkWater(); //will get parent's method because not @Override
 		
 		
-		/** 
-	       * Dynamic Binding
-	       * --Method Overriding 
-	       * --RunTime
-	       * The method to be called is determined at runtime based on the actual object's type.
-	       * Dynamic binding is used when method overriding is involved, allowing subclasses to provide their own implementations of methods declared in a superclass.
-	       * It is also referred to as runtime binding because the binding occurs when the program is executing.
-	       * It allows more flexibility and polymorphic behavior in the object oriented programming 
-	       */
-			
-		
-		/**
-		 * Static Binding
-		 * --Method Overloading
-		 * --Compile Time
-		 */
-		
 	}
 }
