@@ -1,0 +1,4 @@
+Collection Interfaces are divided into 2 groups 
+1. java.util.Collection
+2. java.util.Map
+

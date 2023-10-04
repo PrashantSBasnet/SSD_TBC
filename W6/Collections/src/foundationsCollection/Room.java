@@ -1,3 +1,4 @@
+package foundationsCollection;
 
 public class Room {
 	
