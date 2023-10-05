@@ -32,4 +32,10 @@ public class Employee extends Person{
 		System.out.println("Employee Class doWork()");
 	}
 	
+	//@Override is not allowed because static methods are bonded at compile time
+	//this is just method hiding
+	public static void someMethod() {
+		System.out.println("Employee Class Static Method");
+	}
+	
 }

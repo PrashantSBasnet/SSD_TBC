@@ -32,6 +32,7 @@ public class FullTimeEmployee extends Employee {
 	@Override
 	public void haveLunch() {
 		System.out.println("FullTimeEmployee is having lunch");
+	//....	
 	}
 	
 	//super keyword refers to the superclass(parent) objects

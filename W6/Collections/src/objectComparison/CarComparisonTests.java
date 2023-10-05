@@ -8,8 +8,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import org.junit.jupiter.api.*;
 
-
-
 class CarComparisonTests {
 
 	Collection<Car> cars;
@@ -61,9 +59,9 @@ class CarComparisonTests {
 	public void removeAllIdentityTest() {
 
 		this.cars.removeAll(Arrays.asList(
-				this.subaru, 
+				this.subaru,  //exact instance of the car that we put into collection
 				this.tesla, 
-				new Car("Honda", "Civic", 25000)
+				new Car("Honda", "Civic", 25000) //logically equivalent using a value-based comparison
 		));
 
 		assertTrue(this.cars.isEmpty());

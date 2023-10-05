@@ -72,11 +72,16 @@ public class Driver {
 		
 		
 		
-		//parent class methods via sub class Object
+		//parent class(super class/base class) methods via sub class(child class) Object
 		
 		//employee.drinkWater(); 
 		//employee.haveLunch(); 
+		
+		//we haven't created the object
+		Employee.someMethod();
+		Employee.anotherMethod(); //accessing parents static method using child Class. Since it is static we are not creating object, only using reference
 			
+		Person.someMethod();
 		
 		//Employee emp2 = new FullTimeEmployee(2, "AnotherEmployee", "DBA"); //Upcasting
 	
@@ -86,16 +91,17 @@ public class Driver {
 	  
 	    //child class
 		FullTimeEmployee fullTimeEmployee = new FullTimeEmployee(1, "NewEmployee", "Software Engineer");
-		System.out.println(fullTimeEmployee.toString());
+		//System.out.println(fullTimeEmployee.toString());
 		
 		 
-		fullTimeEmployee.useOfsuper(); //will get the definitions in "Employee" class because super keyword is in the method of FullTimeEmployee class 
+		//fullTimeEmployee.useOfsuper(); //will get the definitions in "Employee" class because super keyword is in the method of FullTimeEmployee class 
 		
 		//fullTimeEmployee.doWork();
 		
 		//overridden method call
 		//fullTimeEmployee.haveLunch(); 
 		//fullTimeEmployee.drinkWater(); //will get parent's method because not @Override
+		
 		
 		
 	}

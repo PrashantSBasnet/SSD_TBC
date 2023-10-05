@@ -11,6 +11,7 @@ package interfaceEg;
  * --They provide pure abstraction. Implementing classes define the methods they have implemented. Polymorphism
  * --Multiple inheritance in java is possible through interfaces. if methods implementations are provided by interfaces, it can lead into ambiguity
  * --Encapsulation by forcing implementing classes to provide their own logic. Thus, separation of concerns and Modular programming
+ *
  * Classes do not extend Interfaces, they implement them
  * 
  * It specifies set of methods that the class must implement

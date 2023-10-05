@@ -7,7 +7,8 @@ package abstraction;
  * 
  * 
  * Abstract class is a placeholder in a class hierarchy that represents a generic concept
- * Abstract classes do not have method body
+ * Abstract methods in abstract classes do not have method body 
+ * Non abstract methods in abstract classes have method body
  * They cannot be instantiated directly
  * They may have constructors
  * They can extend other abstract or regular class
@@ -36,8 +37,8 @@ public class Driver {
 		/**Abstract class Example **/
 	
 		Circle circle = new Circle (6.0);
-		circle.displayInfo(); //inheritance
-		System.out.println("Circle Area:" + circle.calculateArea());
+		//circle.displayInfo(); //inheritance
+		//System.out.println("Circle Area:" + circle.calculateArea());
 		
 		/**Abstract classes cannot be instantiated, but reference type variables can reference a class that extended an abstract class either directly or indirectly	
 	    */

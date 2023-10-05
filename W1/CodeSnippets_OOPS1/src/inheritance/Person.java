@@ -57,6 +57,14 @@ public class Person {
 		System.out.println("Person Class drinkWater()");
 	}
 	
+	public static void someMethod() {
+		System.out.println("Parent class static method");
+	}
+	
+	
+	public static void anotherMethod() {
+		System.out.println("Person class static method");
+	}
 	
 	/**
 	 * constructors do not create objects

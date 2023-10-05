@@ -1,4 +1,6 @@
-/**
+package objectComparison;
+
+/***
  * Comparison-Based Methods
  * boolean contains(Object o)
  * boolean containsAll(Collection<? extends E> c)
@@ -18,18 +20,28 @@
  * -E.g. Two person with their own cars of same make and model
  *
  */
- 
- 
- For primitive types (e.g. int, long, float, double, boolean) == and != are equality tests
- For reference types (i.e. objects) == and != are identity tests
- 
- "hello".equals("hello") true 				(they are equal in value)
- "hello"=="hello" false       			    (they have different memory references)
- "hello"==new String("hello") false 		(because new object has been created in memory)
- 
- 
- 
- 
- 
- 
- 
+public class Example {
+	
+	public static void main (String [] args) {
+		
+		String str1 = new String("Hello");
+		String str2 = new String("Hello");
+		
+		//to check whether two objects refer to same memory location
+		System.out.println(str1==str2);
+		System.out.println("Equals"+str1.equals(str2));
+		
+		String str3= "hello";
+		System.out.println(str3=="hello");
+		System.out.println("Equals"+str3.equals("hello"));
+		
+		String str4= new String("hello");
+		System.out.println(str3==str4);
+		System.out.println("Equals"+str3.equals(str4));
+		
+		
+		
+		CustomClass customClass = new CustomClass();
+		customClass.areEqual();
+}	
+}
