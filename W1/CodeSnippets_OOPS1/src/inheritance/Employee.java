@@ -24,6 +24,7 @@ public class Employee extends Person{
 		return "Employee [id=" + id + ", name=" + name + "]";
 	}
 	
+	@Override
 	public void drinkWater() {
 		System.out.println("Employee Class drinkWater()");
 	}
@@ -34,7 +35,7 @@ public class Employee extends Person{
 	
 	//@Override is not allowed because static methods are bonded at compile time
 	//this is just method hiding
-	public static void someMethod() {
+	public static void staticMethod() {
 		System.out.println("Employee Class Static Method");
 	}
 	

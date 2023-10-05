@@ -57,12 +57,10 @@ public class Person {
 		System.out.println("Person Class drinkWater()");
 	}
 	
-	public static void someMethod() {
-		System.out.println("Parent class static method");
-	}
 	
 	
-	public static void anotherMethod() {
+	//static method in base class that will be hidden in derived class
+	public static void staticMethod() {
 		System.out.println("Person class static method");
 	}
 	

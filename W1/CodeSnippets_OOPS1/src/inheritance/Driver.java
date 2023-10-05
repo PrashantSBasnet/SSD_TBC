@@ -73,15 +73,21 @@ public class Driver {
 		
 		
 		//parent class(super class/base class) methods via sub class(child class) Object
-		
 		//employee.drinkWater(); 
 		//employee.haveLunch(); 
 		
-		//we haven't created the object
-		Employee.someMethod();
-		Employee.anotherMethod(); //accessing parents static method using child Class. Since it is static we are not creating object, only using reference
-			
-		Person.someMethod();
+		
+		//we haven't created the object. we can call it by using class name as static methods are associated with class itself, not with its instance
+		Employee.staticMethod(); 
+		
+		//As per inheritance, this should call child's static method, but since static methods cannot be overriden it is calling parent's static method
+		Person per = new Employee(2, "Shyam");
+		
+		per.staticMethod();	 //you get the static method of base(parent's class)
+		per.drinkWater();   //you get the overriden method of child class (sub class)
+		
+		
+		
 		
 		//Employee emp2 = new FullTimeEmployee(2, "AnotherEmployee", "DBA"); //Upcasting
 	
@@ -100,9 +106,6 @@ public class Driver {
 		
 		//overridden method call
 		//fullTimeEmployee.haveLunch(); 
-		//fullTimeEmployee.drinkWater(); //will get parent's method because not @Override
-		
-		
-		
+		//fullTimeEmployee.drinkWater(); //will get parent's method because not @Override	
 	}
 }
