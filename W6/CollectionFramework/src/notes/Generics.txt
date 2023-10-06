@@ -1,0 +1,12 @@
+
+-> Arrays hold a particular type of elements. Therefore, they are type safe.
+
+Type Casting
+-> Assigning a value of one type to the variable of another type. 
+
+
+Main objectives of generics: 
+-To solve the problem related to type-casting in collection
+-To enable developer to write less redundant code
+
+

@@ -70,5 +70,7 @@ public class FP03FunctionalInterfaces {
 		//.forEach(x->System.out.println(x));  //lambda expression
 		.forEach(System.out::println);  //static method reference
 		
+	    
+	   
 	}
 }

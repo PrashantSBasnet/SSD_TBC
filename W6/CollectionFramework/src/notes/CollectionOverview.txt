@@ -7,6 +7,11 @@ Common Operation in Data Structures:
 
 
 Collection is an object that represents a group of objects.
+->We use collection to hold or transfer a group of objects from one location to another
+# In order to send objects across the network, the objects must be serializable. 
+# Therefore, every Collection (Classes or Interface) implements Serializable Interface and Cloneable Interface (by default)
+# Cloneable interface is to make a copy of the object and compare
+
 
 Java Collection Framework
 - It provides an architecture to store and manipulate the group of objects

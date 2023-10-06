@@ -1,0 +1,33 @@
+Collection Interfaces are divided into 2 groups 
+1. java.util.Collection
+2. java.util.Map
+
+Methods in Collection Interface: 
+1. boolean add(Object o) 
+2. boolean adAll(Collection c)
+3. boolean remove(Object obj)
+4. boolean removeAll(Collection c)
+5. retainAll (Collection c)
+6. void clear()
+7. contains(Object obj)
+8. containsAll(Collection c)
+9. isEmpty(Collection c)
+10. int size()
+11. Iterator iterator()
+12. Object[] toArray()
+
+
+You can use these methods in all the classes under the collection hiaerchy
+
+
+
+Collection: is an interface
+          : List, Set, Queue
+          : present in java.util package
+
+Collections: is a Utility Class
+           : sort(), reverse(), shuffle(), binarySearch(), disjoint(), etc
+           : present in java.util package
+           
+           
+
