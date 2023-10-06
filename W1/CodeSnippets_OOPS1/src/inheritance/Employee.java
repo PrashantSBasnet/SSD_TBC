@@ -34,7 +34,8 @@ public class Employee extends Person{
 	}
 	
 	//@Override is not allowed because static methods are bonded at compile time
-	//this is just method hiding
+	//this is not method inheriting. we are creating a static method with the same name
+	//this is method hiding
 	public static void staticMethod() {
 		System.out.println("Employee Class Static Method");
 	}

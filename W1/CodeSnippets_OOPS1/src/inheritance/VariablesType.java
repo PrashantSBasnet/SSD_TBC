@@ -36,6 +36,7 @@ public class VariablesType {
 	
 	final int MY_CONSTANT =42;
 	
+	
 	/**
 	 * Method with return type - return the object or null
 	 * Method with void - not allowed to return anything
@@ -50,6 +51,12 @@ public class VariablesType {
 		 */
 		int localVar = 10; 
 		
+	}
+	
+	public static void main(String[] args) {
+		//System.out.println(localVar); //not accessible because local variables (primitive int) are stored in stack
+		System.out.println(staticVar); //accessible because they are stored in heap. they are global
+		//instanceVar = x; //not accessible;
 	}
 	
 }

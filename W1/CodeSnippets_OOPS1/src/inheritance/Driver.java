@@ -78,13 +78,14 @@ public class Driver {
 		
 		
 		//we haven't created the object. we can call it by using class name as static methods are associated with class itself, not with its instance
+		//we are calling the method in child class
 		Employee.staticMethod(); 
 		
 		//As per inheritance, this should call child's static method, but since static methods cannot be overriden it is calling parent's static method
 		Person per = new Employee(2, "Shyam");
 		
 		per.staticMethod();	 //you get the static method of base(parent's class)
-		per.drinkWater();   //you get the overriden method of child class (sub class)
+		per.drinkWater();    //you get the overriden method of child class (sub class) as the method is not static
 		
 		
 		
