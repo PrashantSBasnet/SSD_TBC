@@ -5,10 +5,11 @@ public class Driver {
 	public static void main (String[] args) {
 		PolymorphismExample polymorphismEg = new PolymorphismExample();
 		
+		polymorphismEg.viaInheritance();
 		
-		//polymorphismEg.viaMethodOverriding();
+		polymorphismEg.viaMethodOverriding();
 		//polymorphismEg.viaInterfaces();
-		//polymorphismEg.viaInheritance();
+		
 		//polymorphismEg.viaMethodParametersandReturnTypes();
 		//polymorphismEg.viaArraysandCollection();
 		

@@ -36,7 +36,6 @@ package interfaceEg;
  * 2. Members of interface are implicitly abstract and public
  * 3. Access modifiers can be explicitly added
  * 4. If modifiers are not defined, it is public!
- * 5. 
  * 
  * keyword used: Interface, implements
  * @author prashantsingh.basnet
@@ -47,8 +46,9 @@ public class Driver {
 	public static void main (String [] args) {
 		
 		/**Interface Examples**/
-		ConsoleLogger consoleLogger = new ConsoleLogger();
-		consoleLogger.logMessage("This is for test");
+		ConsoleLogger consoleLog = new ConsoleLogger();
+		consoleLog.logMessage("This is for test");
+		
 		
 		DetailLogger dl = new DetailLogger ();
 		dl.writeMessage();
@@ -56,12 +56,16 @@ public class Driver {
 		
 		//Since both of these classes implement the same interface
 		//object type is MessageLogger
-		InterfaceMessageLogger msgLogger = new ConsoleLogger();
+		InterfaceMessageLogger consoleLogger = new ConsoleLogger();
 		InterfaceMessageLogger detailLogger = new DetailLogger();
 		
 		
+		//calling static method
+		InterfaceMessageLogger.exampleStatic();
 		
-		//Examples of Interfaces in Java API
+		
+		
+		//Examples of Interfaces in Java APO
 		//Comparable Interface
 		
 		

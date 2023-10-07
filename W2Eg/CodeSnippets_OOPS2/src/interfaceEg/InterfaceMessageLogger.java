@@ -12,4 +12,8 @@ public interface InterfaceMessageLogger {
 	default void writeMessage() {
 		System.out.println("InterfaceMessgageLogger: Method with Body!!");
 	}
+	
+	static void exampleStatic() {
+		System.out.println("Example of static method");
+	}
 }

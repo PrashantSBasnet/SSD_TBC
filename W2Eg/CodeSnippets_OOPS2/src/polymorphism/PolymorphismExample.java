@@ -23,7 +23,7 @@ public class PolymorphismExample {
 		Animal dog = new Dog();
 		Animal cat = new Cat();
 		
-		dog.makeSound();
+		dog.makeSound(); //dynamic binding
 		cat.makeSound();	
 	}
 	
