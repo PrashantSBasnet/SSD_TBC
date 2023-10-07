@@ -1,0 +1,15 @@
+TreeSet
+
+1. Only Homogeneous insertion
+2. Comparisons based on Balanced Tree
+3. Underlying Data Structure: Balanced Tree
+
+In Balanced Tree, 
+1. Duplicates not allowed
+2. Insertion order not preserved
+3.								 First element you insert is always root,
+  -- value < root value 																--value>root value
+4. Null value accepted only when TreeSet is empty. If you try adding value after null, NullPointerException as Tree set
+   adds value in sorting order.
+   
+#5.Any Object stored in TreeSet must implement Comparable Interface

@@ -1,0 +1,27 @@
+Comparable Interface
+
+1. Present in java.lang package
+2. Contains only one method
+		public int compareTo(Object obj)
+3. Meant for Default Natural Sorting order
+# for default natural sorting order
+
+---------------------------------------------
+
+Comparator Interface
+
+1. Present in java.util package
+2. Contains two methods: 
+			public int compare(Object obj1, Object obj2)
+			public boolean equals(Object obj)
+# for customized sorting
+
+Methods:
+		
+public int compare(Object obj1, Object obj2)	
+-You can give your own implementations to this method
+
+public boolean equals(Object obj)
+-You do not need to provide implementation for this method in the implementing classes
+(because it is present in Object class as well)
+

@@ -1,0 +1,18 @@
+Cursors
+An indicator used to show the current position for respective object or element.
+
+Four types of Cursors: 
+1. Enumeration
+2. Iterator
+3. ListIterator
+4. Spliterator
+
+
+---ITERATOR
+-unidirectional (only in one direction)
+-methods: hasNext(), next(), remove()
+
+
+List Iterator
+-bidirectional
+	

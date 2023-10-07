@@ -1,9 +1,9 @@
 Hierarchy - List
 
-Collection
-		-List
-			--ArrayList 	--LinkedList 		--Vector
-														---Stack
+Collection (I)
+		-List (I)
+			--ArrayList(C)	--LinkedList(C 		--Vector(C)
+														---Stack(C)
 
 List Characteristics:
 1. Ordered Collection of elements (ordered means insertion order of element is always preserved w.r.t index)

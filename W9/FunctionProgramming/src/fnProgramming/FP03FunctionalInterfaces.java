@@ -65,7 +65,7 @@ public class FP03FunctionalInterfaces {
 		
 		
 	    numbers.stream()
-		.filter(isEvenPredicate)   //lambda expression
+		.filter(isEvenPredicate)     //lambda expression
 		.map(squareFunction)		 //lambda expression	
 		//.forEach(x->System.out.println(x));  //lambda expression
 		.forEach(System.out::println);  //static method reference
