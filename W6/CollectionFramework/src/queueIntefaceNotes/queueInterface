@@ -1,0 +1,29 @@
+Queue Interface
+
+Collection
+-Queue
+	--Linked List 	--Priority Queue 	--Blocking Queue
+											---Priority Blocking Queue			---Linked Blocking Queue
+FIFO 
+
+#Represent objects that are about to be processed
+						
+Queue extends Collection Interface
+1. All methods of Collection Interface are available
+2. Addition methods specific to Queue are: 
+		1. boolean add(E e);
+		2. boolean offer(E e);
+		3. E remove();
+		4. E poll();
+		5. E element();
+		6. E peek();						
+										
+------------------------------------------
+
+Priority Queue
+#1. Insertion order not preserved because all the elements inserted based on some priority
+#2. Duplicates not allowed			
+#3. Null Insertion not allowed
+
+PriorityQueue pq = new PriorityQueue(); //default size=11
+						
