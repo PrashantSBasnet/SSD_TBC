@@ -1,0 +1,23 @@
+Map(I)															    ---Dictionary(A)
+--HashMap(c)	 --WeakHashMap(c)	--Identity HashMap(c)    --HashTable(c) 		    --SortedMap(I)
+  ---Linked HashMap(C)											    ---Properties(c)			---Navigable Map(I)
+  																										----TreeMap(C)
+
+
+Map Interface
+
+
+# Not a sub interface of Collection Interface. Therefore, behaves differently
+# Part of Collection Framework
+# Key, Value pair
+
+1. Keys and values are objects, and can be of any data type.
+2. Duplicate keys are not allowed. Values can be duplicated.
+3. Each key and value pair is called an entry. Hence, map is considered as collection of entry objects.
+
+
+hashCode --> sum of all the hash codes of all the entries of a map
+		 --> to determine the index in the hash table where the key-value pair should be stored
+		 --> hashCode() method is used to retrieve the index
+		 --> .equals() => two objects having same hash code
+

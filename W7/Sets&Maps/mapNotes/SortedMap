@@ -1,0 +1,10 @@
+Map(I)
+--SortedMap(I)
+
+Characteristics:
+->key-value in the sorting order (ascending order based on keys)
+->Null key or values are not allowed
+->The keys are sorted either by natural ordering or by a specified comparator.
+
+
+

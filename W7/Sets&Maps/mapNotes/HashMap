@@ -1,0 +1,25 @@
+Map(I)
+	--HashMap(C)
+		--Linked HashMap(C)
+
+Underlying data structure: HashTable
+
+HashMap Characteristics: 
+1. Insertion order is not preserved
+2. Duplicate keys are not allowed
+3. Allows null as a key (Only once). Values can be null more than once.
+4. Heterogeneous elements are allowed as key and value both
+5. Implements Serializable and Cloneable interface	
+6. Extends an abstract class AbstractMap
+
+#Best for: SEARCH OPERATION  (because uses hashing..)
+
+	HashMap 	 					VS 						     HashTable
+- Not Thread-safe											-Thread-safe 
+- Fast but may be inconsistent								-Slow because of locking
+- Allows one null key, multiple null values					-Null key and values are not allowed
+- 1.2 version 												-Legacy class
+- Extends AbstractMap(c)									-Extends Dictionary(c)
+
+
+

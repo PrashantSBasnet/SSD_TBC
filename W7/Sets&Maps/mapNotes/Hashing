@@ -1,0 +1,32 @@
+Hashing
+
+Hash Function: Supply an object and it gives an address of that object in the table
+			 : Example: in department store (item number unique to an item which is like an address)
+			 
+Object class also provides these methods: 
+1. hashCode() --> this is actually the Hash Function that generates unique code
+2. equals() --> two objects that are obj1.equals(obj2),  must have same hash value
+
+*If two objects are equal, their hash code value must be same but reverse is not always true.
+*Two maintain above contract between (equals() and hashCode()), both of these methods must be overridden together
+*hashCode must be generated as per the id that is unique to you (example: citizenship number)
+
+Hash Table 
+- This is an array where hash codes are stored
+
+(HashCode % Size) of the table = index where the object is stored
+
+Object1 ----> HastTable(Array) ----> Hash value(code) 
+			 ( Size of Table)	 %		 (HashCode) = index where the object is stored
+			 
+
+Problem: What happens if same hash code is generated for two unequal objects?
+	---> This is called Collision!
+	---> Suppose, Obj1 and Obj2 both have hash code=15. Therefore, the index=0 (say, size of table=5).
+Solution: LinkedList
+	---> LinkedList generated at index 0 so both can share the same index.
+
+#Hashing makes searching very efficient.
+
+index of key=null is 0
+

@@ -1,0 +1,10 @@
+Map(I)
+	--SortedMap(I)
+			--NavigableMap(I)
+					--TreeMap(C)
+
+Characteristics:
+-Sub Interface of Sorted Map
+-Contains methods related to Navigation functionality
+-Both SortedMap and Navigable Map have a same implementation class as TreeMap
+

@@ -1,0 +1,15 @@
+Linked HashMap
+
+Map(I)
+	--HashMap(C)
+			---LinedHashMap(C)
+			
+     					  			LinkedHashMap									HashMap
+Underlying DataStructure:           HashTable + HashMap								HashTable
+Insertion Order:					Preserved with the help of LinkedList			Not Preserved
+								    1.4 version										1.2 version
+								    
+								    
+#Both HashMap and LinkedHashMap used for developing Cache based applications.							    
+								    
+								    

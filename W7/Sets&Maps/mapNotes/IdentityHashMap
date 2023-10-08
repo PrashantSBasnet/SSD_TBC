@@ -1,0 +1,7 @@
+no duplicates
+
+		HashMap							IdentityHashMap
+
+- .equals Method							== operator
+- Key1.equals(Key2)							Key1==Key2
+

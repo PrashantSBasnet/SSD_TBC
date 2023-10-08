@@ -1,0 +1,8 @@
+WeakHashMap
+
+	HashMap													WeakHashMap
+-Dominates over Garbage Collection Mechanism			   -Garbage Collection Mechanism dominates over it
+-Implements Serializable and Cloneable Interfaces          -Just Implements MapInterface. It doesn't	
+															Serializable and Cloneable Interfaces	
+																
+
