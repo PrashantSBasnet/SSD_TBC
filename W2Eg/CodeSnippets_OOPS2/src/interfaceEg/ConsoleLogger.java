@@ -4,8 +4,7 @@ public class ConsoleLogger implements InterfaceMessageLogger{
 
 	@Override
 	public void logMessage(String message) {
-		System.out.println("Console logger message");	
+		// TODO Auto-generated method stub
+		
 	}
-	
-
 }

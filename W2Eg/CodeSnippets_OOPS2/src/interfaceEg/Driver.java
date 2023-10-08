@@ -61,16 +61,15 @@ public class Driver {
 		
 		
 		//calling static method
-		InterfaceMessageLogger.exampleStatic();
+		InterfaceMessageLogger.exampleStatic(); //because static method is the part of InterfaceMessageLogger Interface only
 		
 		
 		
-		//Examples of Interfaces in Java APO
+		
+		
+		//Examples of Interfaces in Java API
 		//Comparable Interface
-		
-		
-		
-		
+		//Iterator Interface 
 		
 	}
 
