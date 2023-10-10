@@ -21,6 +21,5 @@ public class Driver {
 		
 		types.multiply(2.3, 4.5);
 		types.multiply(3, 5);
-	
 	}
 }

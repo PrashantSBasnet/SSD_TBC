@@ -22,7 +22,7 @@ public class PolymorphismTypes {
 	        return x * y;
 	    }
 	    
-	    
+	   
 	    /**run time is achieved via Inheritance */
 	    void exampleRunTimePolymorphism() {
 	    	PolymorphismExample polymorphismExample = new PolymorphismExample();
