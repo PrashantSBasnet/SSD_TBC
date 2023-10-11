@@ -20,5 +20,4 @@ public class WordProcessor implements Counter{
 		
 		return sentence.split(" ").length;
 	}
-
 }
