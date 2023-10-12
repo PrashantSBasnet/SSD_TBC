@@ -7,4 +7,9 @@ public class ConsoleLogger implements InterfaceMessageLogger{
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Override
+	public void  writeMessage() {
+		System.out.println("Default method of InterfaceMessageLogger overriden");
+	}
 }

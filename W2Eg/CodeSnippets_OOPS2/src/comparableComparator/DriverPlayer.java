@@ -8,7 +8,7 @@ public class DriverPlayer {
 
 	public static void main(String[] args) {
 		  
-		    List<Player> footballTeam = new ArrayList<>();
+		    ArrayList<Player> footballTeam = new ArrayList<>();
 		    
 		    Player player1 = new Player(59, "Karan", 29);
 		    Player player2 = new Player(67, "Aarif", 24);

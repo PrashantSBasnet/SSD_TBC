@@ -59,11 +59,13 @@ public class Driver {
 		InterfaceMessageLogger consoleLogger = new ConsoleLogger();
 		InterfaceMessageLogger detailLogger = new DetailLogger();
 		
+		consoleLogger.writeMessage(); //default method overridden
+		
 		
 		//calling static method
 		InterfaceMessageLogger.exampleStatic(); //because static method is the part of InterfaceMessageLogger Interface only
-		
-		
+												//implementing classes or interfaces cannot provide their own implementations of static methods from the interface
+												//invoked by using Interface name, not on instances of implementing classes
 		
 		
 		

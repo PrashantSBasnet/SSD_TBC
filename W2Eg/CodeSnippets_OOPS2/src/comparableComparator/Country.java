@@ -12,8 +12,12 @@ public class Country implements Comparable<Country>  {
 	//we define strategy in this implemented method
 	@Override
 	public int compareTo(Country c) {
-		//return this.year-c.year;
-		return Integer.compare(this.year, c.year); //natural ordering
+		return this.year-c.year;
+		//return Integer.compare(this.year, c.year); //natural ordering
+	}
+	
+	public Country() {
+		
 	}
 
 
@@ -49,7 +53,7 @@ public class Country implements Comparable<Country>  {
 		return year;
 	}
 
-
+ 
 	public void setYear(int year) {
 		this.year = year;
 	}

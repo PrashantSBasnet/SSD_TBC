@@ -7,10 +7,5 @@ public class DetailLogger implements InterfaceMessageLogger {
 	public void logMessage(String message) {
 		// TODO Auto-generated method stub
 		
-	}
-
-
-	
-	
-	
+	}	
 }
