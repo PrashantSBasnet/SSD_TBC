@@ -1,0 +1,193 @@
+Code conventions are important to programmers for a number of reasons:
+
+-80% of the lifetime cost of a piece of software goes to maintenance.
+-Hardly any software is maintained for its whole life by the original author.
+-Code conventions improve the readability of the software, allowing engineers to understand new code more quickly and thoroughly.
+-If you ship your source code as a product, you need to make sure it is as well packaged and clean as any other product you create.
+
+--------------------------------------------------------------------------------------------
+
+Naming Conventions: 
+
+Packages 
+	- The prefix of a unique package name is always written in all-lowercase ASCII letters 
+	- starting should be one of the top-level domain names, currently com, edu, gov, mil, net, org, or one of the English two-letter codes identifying countries as specified in ISO Standard 3166, 1981.
+	- com.sun.eng; com.apple.quicktime.v2
+
+Classes 
+	–Class names should be nouns, in mixed case with the first letter of each internal word capitalized. 
+	-Try to keep your class names simple and descriptive. 
+	-Use whole words-avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).  
+	-class Raster; class ImageSprite;
+
+Interfaces
+	–same like class name
+	-interface RasterDelegate; interface Storing;
+
+Methods 
+	-should be verbs, in mixed case with the first letter lowercase
+	-the first letter of each internal word capitalized
+	-run(); runFast(); getBackground();
+	
+Variables 
+	– Variable names should not start with underscore _ or dollar sign $ characters, even though both are allowed
+	- short and meaningful and mnemonic
+	-  int i; char c; float myWidth;
+
+Constants 
+	-uppercase with words separated by underscores
+	- static final int MIN_WIDTH=4; static final int MAX_WIDTH = 999; static final int GET_THE_CPU = 1;
+
+--------------------------------------------------------------------------------------------
+
+Number Per Line
+
+One declaration per line is recommended since it encourages commenting. In other words,
+
+int level; // indentation level
+int size;  // size of table
+
+try avoiding this style: int level, size;
+
+argv++;         // Correct
+
+argc--;         // Correct  
+argv++; argc--; // AVOID!
+
+---------------------------------------------------------------------------------------------
+
+Ordinary Comments
+
+// check if employee has right to all benefits
+if ((employee.flags & HOURLY_FLAG) && (employee.age > 65))
+
+--------------------------------------------------------------------------------------------
+
+git commit -m “Improve performance with lazy load implementation for images”
+
+----------------------------------------------------------------------------------------------
+
+Do not declare the same variable name in an inner block:
+
+int count;
+...
+myMethod() {
+    if (condition) {
+        int count = 0;     // AVOID!
+        ...
+    }
+    ...
+}
+
+----------------------------------------------------------------------------------------------
+
+Exception
+No Empty Catch Blocks
+Handling Exceptions with messages
+ 
+private int getListOfWorkers(File[] files) {
+	  if (files == null)
+          throw new NullPointerException("File list cannot be null");
+          
+----------------------------------------------------------------------------------------------
+
+Java developers should thus use a private modifier to protect the fields in order to enforce information type in the software design.
+ 
+ //good practice and this ensurues the field values to not change inappropriately
+ public class Employee{
+ 	private String name; 
+ 	private int age;
+ }
+ 
+------------------------------------------------------------------------------------------------ 
+
+Referring to Class Variables and Methods
+
+Avoid using an object to access a class (static) variable or method. Use a class name instead. For example:
+classMethod();             //OK
+AClass.classMethod();      //OK
+anObject.classMethod();    //AVOID!
+ 
+ 
+ 
+-------------------------------------------------------------------------------------------------
+
+Parentheses
+
+It is generally a good idea to use parentheses liberally in expressions involving mixed operators to avoid operator precedence problems. Even if the operator precedence seems clear to you, it might not be to others-you shouldn't assume that other programmers know precedence as well as you do.
+
+Copy
+Copied to ClipboardError: Could not Copy
+if (a == b && c == d)     // AVOID!
+if ((a == b) && (c == d)) // RIGHT
+ White Space 
+ Blank Lines
+
+
+--------------------------------------------------------------------------------------------------
+
+
+Two blank lines should always be used in the following circumstances:
+	-Between sections of a source file
+	-Between class and interface definitions
+
+One blank line should always be used in the following circumstances:
+	-Between methods
+	-Between the local variables in a method and its first statement
+	-Before a block or single-line comment
+	-Between logical sections inside a method to improve readability
+ 
+ ------------------------------------------------------------------------------------------------
+ 
+Primitive Type Variables
+
+	-Primitive types are special data types built into the language; they are not objects created from a class
+	-These values are already the default initialization values of member variables in Java. 
+	-It is a good Java best practice to be aware of the default initialization values and avoid initializing other variables.
+
+ 	by default, for primitive data types the following initialization occurs implicitly
+ 
+    Data Type					    Default Value (for fields)
+	byte							0
+	short							0
+	int								0
+	long							0L
+	float							0.0f
+	double							0.0d
+	char					  	  	'\u0000'
+	String (or any object)  		null
+	boolean							false
+	
+	-Local variables are slightly different; the compiler never assigns a default value to an uninitialized local variable. 
+	-If you cannot initialize your local variable where it is declared, make sure to assign it a value before you attempt to use it. 
+	-Accessing an uninitialized local variable will result in a compile-time error.
+
+
+Integer Literals
+	-Values of the integral types byte, short, int, and long can be created from int literals. 
+	-Values of type long that exceed the range of int can be created from long literals.
+	-An integer literal is of type long if it ends with the letter L or l; otherwise it is of type int. 
+	-It is recommended that you use the upper case letter L because the lower case letter l is hard to distinguish from the digit 1.
+
+	If you need precise calculations, you should use double instead of float.
+	When precision is not as important, a good practice is to use float values instead of double because it takes up half the memory space.
+
+Floating-Point Literals
+	-A floating-point literal is of type float if it ends with the letter F or f; 
+	-otherwise its type is double and it can optionally end with the letter D or d.
+
+	-The floating point types (float and double) can also be expressed using E or e (for scientific notation), 
+	-F or f (32-bit float literal) and D or d (64-bit double literal; this is the default and by convention is omitted).
+
+	double d1 = 123.4;
+	// same value as d1, but in scientific notation
+	double d2 = 1.234e2;
+	float f1  = 123.4f;
+
+
+
+
+
+
+	
+	
