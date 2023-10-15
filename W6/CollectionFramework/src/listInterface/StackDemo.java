@@ -8,18 +8,19 @@ import java.util.Stack;
 public class StackDemo {
 	
 	public static void main(String[] args) {
-		Stack s = new Stack();
+		Stack s = new Stack<>();
 		s.push("A");
 		s.push("B");
 		s.push(13);
 		s.push(true);
+		s.push(null);
 		
 		//----methods in Stack
 	
-		Object o = s.pop();
+		//Object o = s.pop(); //removes the value at the top (front)
 		System.out.println(s);
 		
-		Object obj = s.peek();	
+		Object obj = s.peek();	//returns the value at the top (front)
 		System.out.println(s);
 		
 		System.out.println(s.empty());
@@ -27,8 +28,14 @@ public class StackDemo {
 		
 	
 		
+		//--Use of Generics 
+		
+		Stack<Integer> intStack = new Stack<>();
+		intStack.push(4);
+		intStack.push(5);
 		
 		
+	
 		//-----------Iterator Examples ---------------------------------
 		
 		

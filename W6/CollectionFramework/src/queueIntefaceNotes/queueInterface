@@ -1,9 +1,9 @@
 Queue Interface
 
-Collection
--Queue
-	--Linked List 	--Priority Queue 	--Blocking Queue
-											---Priority Blocking Queue			---Linked Blocking Queue
+Collection(I)
+	-Queue(I)
+		--Linked List(C)	--Priority Queue(C) 	--Blocking Queue
+														---Priority Blocking Queue(C)			---Linked Blocking Queue
 FIFO 
 
 #Represent objects that are about to be processed
@@ -17,10 +17,16 @@ Queue extends Collection Interface
 		4. E poll();
 		5. E element();
 		6. E peek();						
-										
+
+
+Advantages of using QUEUE:
+1. 										
 ------------------------------------------
 
+
+
 Priority Queue
+
 #1. Insertion order not preserved because all the elements inserted based on some priority
 #2. Duplicates not allowed			
 #3. Null Insertion not allowed

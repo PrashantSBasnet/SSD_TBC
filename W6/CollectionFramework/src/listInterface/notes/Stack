@@ -3,6 +3,6 @@ Stack
 Underlying data structure: Stack
 
 Properties: 
-1. List properties (duplicates, insertion order perserved, heterogeneous objects)
+1. List properties (duplicates, insertion order perserved, heterogeneous objects, null)
 2. LIFO 
 

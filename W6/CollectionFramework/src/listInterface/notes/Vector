@@ -15,7 +15,7 @@ ArrayList
 
 
 Vector 
-1. Methods in ArrayList are Synchronized. Thread Safe!
+1. Methods in Vector are Synchronized. Thread Safe!
 #2. Performance is low because threads are required to wait to operate on a Vector object.
 3. Legacy Class
 

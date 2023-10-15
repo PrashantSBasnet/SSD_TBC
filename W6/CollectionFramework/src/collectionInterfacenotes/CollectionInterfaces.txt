@@ -2,6 +2,25 @@ Collection Interfaces are divided into 2 groups
 1. java.util.Collection
 2. java.util.Map
 
+java.util.Collection has the following descendants:
+
+1. java.util.Set
+2. java.util.SortedSet
+3. java.util.NavigableSet
+4. java.util.Queue
+5. java.util.concurrent.BlockingQueue
+6. java.util.concurrent.TransferQueue
+7. java.util.Deque
+8. java.util.concurrent.BlockingDeque
+
+
+java.util.Map has the following descendants:
+
+1. java.util.SortedMap
+2. java.util.NavigableMap
+3. java.util.concurrent.ConcurrentMap
+4. java.util.concurrent.ConcurrentNavigableMap
+
 Methods in Collection Interface: 
 1. boolean add(Object o) 
 2. boolean adAll(Collection c)
@@ -17,7 +36,7 @@ Methods in Collection Interface:
 12. Object[] toArray()
 
 
-You can use these methods in all the classes under the collection hiaerchy
+You can use these methods in all the classes under the collection hierarchy
 
 
 
@@ -29,5 +48,27 @@ Collections: is a Utility Class
            : sort(), reverse(), shuffle(), binarySearch(), disjoint(), etc
            : present in java.util package
            
-           
+   
+Collection Interfaces are divided into 2 groups 
+1. java.util.Collection
+2. java.util.Map
+
+
+
+
+
+-> Collections that do not support modification operations (such as add, remove and clear) are referred to as unmodifiable. 
+   Collections that are not unmodifiable are modifiable.
+   
+-> Collections that additionally guarantee that no change in the Collection object will be visible are referred to as immutable. 
+   Collections that are not immutable are mutable.
+   
+-> Lists that guarantee that their size remains constant even though the elements can change are referred to as fixed-size. 
+   Lists that are not fixed-size are referred to as variable-size.
+   
+-> Lists that support fast (generally constant time) indexed element access are known as random access lists. 
+   Lists that do not support fast indexed element access are known as sequential access lists. 
+   The RandomAccess marker interface enables lists to advertise the fact that they support random access. 
+   This enables generic algorithms to change their behavior to provide good performance when applied to either random or sequential access lists.
+        
 

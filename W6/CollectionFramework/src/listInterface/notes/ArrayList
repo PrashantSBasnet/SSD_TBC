@@ -1,0 +1,38 @@
+Hierarchy - List
+
+Collection (I)
+		-List (I)
+			--ArrayList(C)	--LinkedList(C 		--Vector(C)
+														---Stack(C)
+
+
+ArrayList (Resizable or growable array)
+
+1. Allows duplicates elements
+2. Insertion Order is preserved		
+3. Accepts heterogeneous objects
+
+Default size of ArrayList is 10 (0-9 index) //ArrayList al = new ArrayList(); 
+- If 10 blocks get occupied, new array list with size of: 
+				x * (3/2) +1 =16 [x=size of current array list i.e 10]
+- Then, all the elements of old array list gets copied to the new array list. 
+- Old array list will be discarded by the garbage collector.
+
+
+
+#ArrayList implements Serializable, Cloneable, RandomAccess Interface
+RandomAccess Interface allows any random element to be accessed in same speed
+
+# ArrayList and Vector best for retrieval operation frequently on any collection. 
+# ArrayList is not recommended for insertion and deletion because for a single insertion or deletion, many shifts of elements of the list occur.
+
+
+
+
+ 
+
+
+
+
+
+						

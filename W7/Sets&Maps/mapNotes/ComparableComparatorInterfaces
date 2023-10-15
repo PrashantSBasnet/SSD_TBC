@@ -1,9 +1,12 @@
 Comparable Interface
 
 1. Present in java.lang package
+
 2. Contains only one method
 		public int compareTo(Object obj)
+		
 3. Meant for Default Natural Sorting order
+
 # for default natural sorting order
 
 ---------------------------------------------

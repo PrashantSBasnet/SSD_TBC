@@ -1,0 +1,32 @@
+Hierarchy - List
+
+Collection (I)
+		-List (I)
+			--ArrayList(C)	   --LinkedList(C) 		 --Vector(C)
+														 ---Stack(C)
+
+List Characteristics:
+1. Ordered Collection of elements (ordered means insertion order of element is always preserved w.r.t index)
+2. List allows positional access to elements (add, remove via index) 
+3. Allows duplicates
+4. Allows null
+5. It is an interface. We cannot create its object. We create its instance using its implementation classes		
+
+
+Differences with ArrayList: 
+ 	List (I)																	ArrayList (C)
+- extends Collection Framework											-extends the Abstract class
+- creates list of elements accessible via indexes						-creates dynamic arrays accessible via indexes
+- used to create ordered list of elements								-used to create a dynamic array of elements
+- faster in insertion and deletion of elements							-slower
+- slower in searching													-faster
+
+
+
+ 
+
+
+
+
+
+						

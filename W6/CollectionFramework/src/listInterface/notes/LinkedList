@@ -12,6 +12,8 @@ Basic Characters:
 Methods like addFirst(), addLast(), removeFirst(), removeLast() are used to develop Stack(LIFO) and Queues(FIFO)
 
 
+Differences with ArrayList:
+
 ArrayList																
 -not recommended for insertion and deletion in middle					
 	(because shift of each element)											 

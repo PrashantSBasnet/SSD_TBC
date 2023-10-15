@@ -14,7 +14,7 @@ HashMap Characteristics:
 
 #Best for: SEARCH OPERATION  (because uses hashing..)
 
-	HashMap 	 					VS 						     HashTable
+	HashMap 	 					VS 						   HashTable
 - Not Thread-safe											-Thread-safe 
 - Fast but may be inconsistent								-Slow because of locking
 - Allows one null key, multiple null values					-Null key and values are not allowed
