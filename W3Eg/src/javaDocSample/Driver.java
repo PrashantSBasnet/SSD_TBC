@@ -28,7 +28,7 @@ public class Driver {
 	 * @return returns integer sum of two integer inputs
 	 */
 	public int add(int x, int y) {
-		return x+y;
+		return x+y; //sum of two integer numbers
 	}
 
 }
