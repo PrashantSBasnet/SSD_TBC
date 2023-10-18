@@ -29,7 +29,7 @@ Java Collection Framework
 
 	--------------
 
-	Benefits of Collections:
+	Benefits of Collection:
 	Standard data structures within the programming language deliver tremendous benefits for Java Developers.
 
 	Reduces Effort

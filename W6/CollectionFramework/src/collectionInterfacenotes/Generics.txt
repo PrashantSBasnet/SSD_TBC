@@ -1,12 +1,70 @@
 
--> Arrays hold a particular type of elements. Therefore, they are type safe.
+GENERICS
+---------------------------------------------------------------------------
 
-Type Casting
--> Assigning a value of one type to the variable of another type. 
+Why use Generics?
+Generics enable types (classes and interfaces) to be parameters when defining classes, interfaces and methods.
+
+1. Stronger type checks at compile time.
+   A Java compiler applies strong type checking to generic code and issues errors if the code violates type safety. 
+   Fixing compile-time errors is easier than fixing runtime errors, which can be difficult to find.
 
 
-Main objectives of generics: 
--To solve the problem related to type-casting in collection
--To enable developer to write less redundant code
+2. Elimination of casts.
+	
+	The following code snippet without generics requires casting:
+	
+	List list = new ArrayList();
+	list.add("hello");
+	String s = (String) list.get(0);
+	
+	When re-written to use generics, the code does not require casting:
+	
+	List<String> list = new ArrayList<String>();
+	list.add("hello");
+	String s = list.get(0);   // no cast
+
+
+3.  Enabling programmers to implement generic algorithms.
+	By using Generics, programmers can implement generic algorithms that work on collections of different types, 
+	can be customized, and are type safe and easier to read.
+
+----------------------------------------------------------------
+
+	Box<Integer> integerBox; //just declare Box Object of type Integer
+	
+	An invocation of a generic type is generally known as a parameterized type.
+	To instantiate this class, use the new keyword, as usual, but place <Integer> between the class name and the parenthesis:
+		Box<Integer> integerBox = new Box<Integer>();
+
+
+	The most commonly used type parameter names are:
+
+	E - Element (used extensively by the Java Collections Framework)
+	K - Key
+	N - Number
+	T - Type
+	V - Value
+	S,U,V etc. - 2nd, 3rd, 4th types	
+	
+-----------------------------------------------------------------
+
+ WILDCARDS <?>
+ 
+->Unknown type
+->can be used in a variety of situations: as the type of a parameter, field, or local variable; 
+	sometimes as a return type (though it is better programming practice to be more specific).
+->The wildcard is never used as a type argument for a generic method invocation, a generic class instance creation, or a supertype.
+
+#UpperBounded WildCard
+List<Integer>, List<Double>, and List<Number>; //can be written as List<? extends Number>
+	
+#Unbounded WildCard	
+The unbounded wildcard type is specified using the wildcard character (?), for example, List<?>. This is called a list of unknown type.
+
+#Lowerbounded WildCard
+To write the method that works on lists of Integer and the supertypes of Integer, such as Integer, Number, and Object, you would specify List<? super Integer>.
+The term List<Integer> is more restrictive than List<? super Integer> because the former matches a list of type Integer only, whereas the latter matches a list of any type that is a supertype of Integer.
+
 
 
