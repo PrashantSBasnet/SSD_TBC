@@ -2,6 +2,7 @@ package labHints;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
 import org.junit.jupiter.api.Test;
@@ -19,7 +20,7 @@ public class TriangleTest {
 		assertFalse(tri.isIsoceles());
 	}
 	
-	
+	@DisplayName("Test that verifies Equilateral triangle.")
 	@Test
 	void equalConstructor() {
 
@@ -52,6 +53,7 @@ public class TriangleTest {
 		//Fails: identifies bug within getAverageLength()
 		assertEquals((repCount+repCount *2 +repCount*3)/3, tri.getAverageLength());
 	}
+	
 	
 	
 	
