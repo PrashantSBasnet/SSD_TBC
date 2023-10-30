@@ -13,7 +13,7 @@ public class DataStructureDemo {
 		
 		//we have dynamic array 
 		ArrayList arList = new ArrayList();
-		//int --> Integer because int is primite and ArrayList holds Objects
+		//int --> Integer because int is primitive and ArrayList holds Objects
 		arList.add("Apple"); //string type
 		arList.add(new Employee()); //object type
 		

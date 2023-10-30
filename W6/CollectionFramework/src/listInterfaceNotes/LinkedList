@@ -1,3 +1,10 @@
+Collection (I)
+		-List (I)
+			--ArrayList(C)		--LinkedList(C) 		--Vector(C)
+															---Stack(C)
+All Implemented Interfaces:
+Serializable, Cloneable, Iterable<E>, Collection<E>, Deque<E>, List<E>, Queue<E>
+
 Linked List 
 -Linked List are data structures in which every element consists of (data part and address part)
 -Each element of Linked List is called a nodes
@@ -11,7 +18,7 @@ Basic Characters:
 
 Methods like addFirst(), addLast(), removeFirst(), removeLast() are used to develop Stack(LIFO) and Queues(FIFO)
 
-
+------------------------------------------------------------
 Differences with ArrayList:
 
 ArrayList																
@@ -20,11 +27,12 @@ ArrayList
 -Best choice for retrieving operations									
 	(because consecutive memory locations are only located to arrays.
 	 array is the underlying data structure for ArrayList.)
-	 
+------------------------------------------------------------	 
 
 LinkedList
--Best choice for frequent operations of insertion and deletion in middle 
+-Best choice for: frequent operations of insertion and deletion in middle 
     (because change of address of particular node is sufficient)
+    
 -Not recommended for retrieval operations
 	(because location/address of an element is only available to the previous element
 	 therefore, JVM has to go to every node of Linked List one by one on retrieval)

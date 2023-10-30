@@ -6,7 +6,8 @@ public class ArrayListDemo {
 	
 	public static void main(String [] args) {
 		
-		ArrayList al = new ArrayList(); //default size: 10 (0-9 index)
+		ArrayList al = new ArrayList<>(); //default size: 10 (0-9 index) 
+		//ArrayList<Object> al = new ArrayList<>(); //as we do not know the specific type that the arrayList holds.
 		
 		ArrayList aList = new ArrayList(30); //defining size by calling ArrayList(x) constructor
 	
@@ -30,7 +31,5 @@ public class ArrayListDemo {
 		
 		
 		
-		
-	
 	}
 }

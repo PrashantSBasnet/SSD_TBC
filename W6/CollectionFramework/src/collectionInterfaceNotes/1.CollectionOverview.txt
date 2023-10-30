@@ -5,12 +5,17 @@ Common Operation in Data Structures:
 3. Manage (Replace an element, remove an element)
 4. Retrieve
 
-
+ 
 Collection is an object that represents a group of objects.
 ->We use collection to hold or transfer a group of objects from one location to another
 # In order to send objects across the network, the objects must be serializable. 
+	(Serialization = converting objects into sequence of bytes that can be easily stored, transmitted, or reconstructed into an object at a later time)
 # Therefore, every Collection (Classes or Interface) implements Serializable Interface and Cloneable Interface (by default)
+	(Serializable Interface and Cloneable Interface do not have any methods. They act as a marker/signal only)
 # Cloneable interface is to make a copy of the object and compare
+	Object.clone()
+
+
 
 
 Java Collection Framework
@@ -38,13 +43,13 @@ Java Collection Framework
 	Increases Quality
 	Implementations are battle tested, giving developers instant access to high-performing and well-engineered data structures.
 	
-	Promotes Interoperability
+	Promotes Interoperability (work with different collection types using a consistent set of methods and interfaces)
 	Unrelated code bases are collections in their APIs, which creates interoperability among them.
 	
 	------------------
 	
 	
-	Array 
+	Array (basic and fundamental data structure)
 	- fixed size
 	- IndexOutOfBound Exception if we want to store more than the size of the array
 	- Solution: Collection 
@@ -54,18 +59,18 @@ Java Collection Framework
 
 	Array 												Collection
 	
-	Fixed in Size										Growable
+-	Fixed in Size										Growable
 	
-	Can hold only homogeneous type 						Can hold homogeneous or heterogeneous data
+-	Can hold only homogeneous type 						Can hold homogeneous or heterogeneous data
 	
-	Memory point of view, we should not use             Recommended to use to Stop memory wastage as it grows on demand  
+-	Memory point of view, we should not use             Recommended to use to Stop memory wastage as it grows on demand  
 	'Arrays'
 	
-	There are no underlying data structures 			In built data structures and algorithms
+-	There are no underlying data structures 			In built data structures and algorithms
 	
-	Can hold primitive type and object type both		can only hold object types
+-	Can hold primitive type and object type both		can only hold object types
 	
-	
+														eg. ArrayList, Stack, Queue, Map, Sets, etc.
 
 
 

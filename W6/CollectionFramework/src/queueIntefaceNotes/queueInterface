@@ -2,22 +2,27 @@ Queue Interface
 
 Collection(I)
 	-Queue(I)
-		--Linked List(C)	--Priority Queue(C) 	--Blocking Queue
+		--LinkedList(C)		--Priority Queue(C) 	--Blocking Queue
 														---Priority Blocking Queue(C)			---Linked Blocking Queue
-FIFO 
+FIFO (First-In-First Out)
 
 #Represent objects that are about to be processed
 						
 Queue extends Collection Interface
 1. All methods of Collection Interface are available
 2. Addition methods specific to Queue are: 
-		1. boolean add(E e);
-		2. boolean offer(E e);
-		3. E remove();
-		4. E poll();
-		5. E element();
-		6. E peek();						
-
+		1. boolean add(E e); --Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions, returning true upon success and throwing an IllegalStateException if no space is currently available
+		2. boolean offer(E e); --Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions
+		3. E remove(); --Retrieves and removes the head of this queue
+		4. E poll(); --Retrieves and removes the head of this queue, or returns null if this queue is empty
+		5. E element(); --Retrieves, but does not remove, the head of this queue.
+		6. E peek(); --Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
+			
+		
+			throws Exception  if the operation fails				returns a special value (either null or false, depending on the operation)				
+Insert			add(e)														offer(e)
+Remove			remove()													poll()
+Examine			element()													peek()
 
 Advantages of using QUEUE:
 1. 										
@@ -27,9 +32,19 @@ Advantages of using QUEUE:
 
 Priority Queue
 
+Class PriorityQueue<E>
+
+All Implemented Interfaces: Serializable, Iterable<E>, Collection<E>, Queue<E>
+
+-> orders elements according to a supplied comparator, or the elements' natural ordering. Therefore, FIFO not maintained
 #1. Insertion order not preserved because all the elements inserted based on some priority
 #2. Duplicates not allowed			
 #3. Null Insertion not allowed
 
+It doesn't have a constructor that allows setting the initial capacity explicitly
 PriorityQueue pq = new PriorityQueue(); //default size=11
+
+#4. Multiple threads should not access a PriorityQueue instance concurrently if any of the threads modifies the queue. Instead, use the thread-safe PriorityBlockingQueue class
+
+
 						

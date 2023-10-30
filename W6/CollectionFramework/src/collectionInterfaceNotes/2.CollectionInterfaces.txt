@@ -1,4 +1,10 @@
-Collection Interfaces are divided into 2 groups 
+	
+	Iterable (I)
+		-- Collection(I)
+	
+Interface Collection<E> extends Iterable<E>
+
+Collection Framework are divided into 2 groups 
 1. java.util.Collection
 2. java.util.Map
 
@@ -43,19 +49,14 @@ You can use these methods in all the classes under the collection hierarchy
 Collection: is an interface
           : List, Set, Queue
           : present in java.util package
+          Collection: A group of discrete objects
+
 
 Collections: is a Utility Class
            : sort(), reverse(), shuffle(), binarySearch(), disjoint(), etc
            : present in java.util package
            
-   
-Collection Interfaces are divided into 2 groups 
-1. java.util.Collection
-2. java.util.Map
-
-
-
-
+  
 
 -> Collections that do not support modification operations (such as add, remove and clear) are referred to as unmodifiable. 
    Collections that are not unmodifiable are modifiable.

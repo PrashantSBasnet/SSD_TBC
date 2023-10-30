@@ -1,0 +1,103 @@
+Set Interface
+
+Collection (I)
+		-Set (I)
+			--HashSet(C)				--Sorted Set(I)
+				---Linked HashSet(C)			--Navigable Set(I)
+													---Tree Set(C)		
+													
+Interface Set<E>
+			
+Characteristics:
+1. No duplicate elements [i.e.  sets contain no pair of elements e1 and e2 such that e1.equals(e2)]
+2. Insertion Order is not preserved
+3. At most only one null element
+4. Accepts heterogeneous objects
+5. All methods in Sets Interface are from Collection Interfaces
+
+# Set interface places additional stipulations, beyond those inherited from the Collection interface, on the contracts of all constructors and on the contracts of the add, equals and hashCode methods
+# The additional stipulation on constructors is, not surprisingly, that all constructors must create a set that contains no duplicate elements
+# Great care must be exercised if mutable objects are used as set elements (This statement is also true for other collections like: 'ArrayList' and 'HashMap')
+# Some set implementations have restrictions on the elements that they may contain. 
+  For e.g.  Some implementations prohibit null elements (TreeSet, EnumSet), and some have restrictions on the types(HashSet, LinkedHashSet) of their elements.
+  			Attempting to add an ineligible element throws an unchecked exception, typically NullPointerException or ClassCastException.
+
+
+
+All Methods
+	boolean	add(E e) 	--Adds the specified element to this set if it is not already present (optional operation).
+	boolean	addAll(Collection<? extends E> c) 	--Adds all of the elements in the specified collection to this set if they're not already present (optional operation).
+	void	clear() 	--Removes all of the elements from this set (optional operation).
+	boolean	contains(Object o) 	--Returns true if this set contains the specified element.
+	boolean	containsAll(Collection<?> c) 	--Returns true if this set contains all of the elements of the specified collection.
+	boolean	equals(Object o) 	--Compares the specified object with this set for equality.
+	int	hashCode() 	--Returns the hash code value for this set.
+	boolean	isEmpty() 	--Returns true if this set contains no elements.
+	Iterator<E>	iterator() 	--Returns an iterator over the elements in this set.
+	boolean	remove(Object o) 	--Removes the specified element from this set if it is present (optional operation).
+	boolean	removeAll(Collection<?> c) 	--Removes from this set all of its elements that are contained in the specified collection (optional operation).
+	boolean	retainAll(Collection<?> c) 	--Retains only the elements in this set that are contained in the specified collection (optional operation).
+	int	size() 	--Returns the number of elements in this set (its cardinality).
+	default Spliterator<E>	spliterator() 	--Creates a Spliterator over the elements in this set.
+	Object[]	toArray() 	--Returns an array containing all of the elements in this set.
+	<T> T[]	toArray(T[] a) 	--Returns an array containing all of the elements in this set; the runtime type of the returned array is that of the specified array.
+
+------------------------------
+
+HashSet
+
+1. Very suitable for Searching operation (Google uses the same)
+2. Insertion order is not preserved
+
+
+Underlying Data Structure: HashTable
+				HashTable 	 (size =x)			
+Object --->		HashCode	 (code value =y)
+			         		 Now, index= y%x
+
+LoadFactor Concept 
+default value= 0.75 
+This mean, when 75% of space gets occupied, new HashSet is created with size = (current size *2)
+
+Default capacity of HashSet = 16
+
+---------------------------------
+
+
+LinkedHashSet (sub class of HashSet)
+
+#1. Insertion order is preserved
+
+Underlying Data Structure: combination of Linked List and Hash table.
+
+
+---------------------------------------
+
+
+
+Sorted Set 
+
+# 6 more methods than Collection Interface methods
+1. Object first()
+2. Object last()
+3. SortedSet headSet(Object o)
+4. SortedSet tailSet(Object o)
+5. SortedSet subSet(Objecto, Object p)
+6. Comparator comparator()
+
+#accepts only Homogeneous objects because sorting of same objects is only possible
+
+
+------------------------------------------
+
+NavigableSet Interface
+1. Sub interface of SortedSet
+2. Contains method related to Navigation functionality.
+3. Both sortedSet and NavigableSet have a same implementation class as Tree
+
+
+
+
+
+
+			         		 

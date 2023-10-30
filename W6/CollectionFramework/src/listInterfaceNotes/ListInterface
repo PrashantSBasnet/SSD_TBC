@@ -1,0 +1,50 @@
+Hierarchy - List
+
+Collection (I)
+		-List (I)
+			--ArrayList(C)	   --LinkedList(C) 		 --Vector(C)
+														 ---Stack(C)
+
+List Characteristics:
+1. Ordered Collection of elements (ordered means insertion order of element is always preserved w.r.t index)
+2. List allows positional access to elements (add, remove via index) 
+3. Allows duplicates
+4. Allows null
+5. It is an interface. We cannot create its object. We create its instance using its implementation classes		
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Interface List<E>
+
+- ordered collection (also known as sequence)
+- user has precise control over where in the list each element is inserted
+- use can access elements by their integer index (position in the list), and search for elements in the list
+
+- allows duplicates
+- allows storing multiple null values
+- index-based access
+- insertion and deletion of the elements based on index or position in the list
+- dynamic size (list grows and shrinks as per the no. of elements added or removed)
+- lists are mutable (elements in the list can be updated, added or removed after the list is created)
+- they are zero based (like arrays)
+- ListIterator is provided by List interface. It allows element insertion and replacement, and bidirectional access in addition to the normal operations that the Iterator interface provides.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Differences with ArrayList: 
+ 	List (I)																	ArrayList (C)
+- extends Collection Framework											-extends the Abstract class
+- creates list of elements accessible via indexes						-creates dynamic arrays accessible via indexes
+- used to create ordered list of elements								-used to create a dynamic array of elements
+- faster in insertion and deletion of elements							-slower
+- slower in searching													-faster
+
+
+
+ 
+
+
+
+
+
+						

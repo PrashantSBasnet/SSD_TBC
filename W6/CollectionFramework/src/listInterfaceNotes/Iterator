@@ -12,6 +12,8 @@ Four types of Cursors:
 -unidirectional (only in one direction)
 -methods: hasNext(), next(), remove()
 
+Interface Iterator<E>
+
 
 List Iterator
 -bidirectional

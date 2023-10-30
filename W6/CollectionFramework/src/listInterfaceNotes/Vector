@@ -1,11 +1,21 @@
-Vector implements List
+Collection (I)
+		-List (I)
+			--ArrayList(C)	--LinkedList(C) 		--Vector(C)
+														 ---Stack(C)
 
+All Implemented Interfaces:
+	Serializable, Cloneable, Iterable<E>, Collection<E>, List<E>, RandomAccess
+
+
+Vector implements List
 1. Allows duplicates
 2. Allows heterogeneous objects
 3. Insertion Order is preserved
 4. Implements Serializable, Cloneable, RandomAccess Interfaces
 #5. Vector are thread-safe. All methods are synchronizable. This means only one thread can access the method at a time.
 
+-------------------------------------------------------------------------------
+Differences with ArrayList:
 
 ArrayList
 1. Methods in ArrayList are not Synchronized. Not Thread Safe!
@@ -13,11 +23,12 @@ ArrayList
 3. Not a Legacy Class.
 
 
-
 Vector 
 1. Methods in Vector are Synchronized. Thread Safe!
 #2. Performance is low because threads are required to wait to operate on a Vector object.
 3. Legacy Class
+
+--------------------------------------------------------------------------------
 
 Default size of Vector is 10 (0-9 index) //Vector v = new Vector(); 
 - If 10 blocks get occupied, new array list with size of: x*2 
