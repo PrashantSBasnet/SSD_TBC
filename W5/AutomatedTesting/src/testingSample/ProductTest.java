@@ -1,8 +1,6 @@
 package testingSample;
 
-
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
 
@@ -30,7 +28,7 @@ public class ProductTest {
 	
 	
 	/**assertMethods 
-	assertEquals(expected, actual);
+	assertEquals(expected, actual);  
 	assertNotEquals(unexpected, actual);
 	assertSame(expected, actual);
 	assertNotSame(unexpected, actual);
@@ -41,4 +39,20 @@ public class ProductTest {
 	assertThrows(expectedType, executable);
 	assertTimeout(duration, executable);
 	*/
+	
+	/**
+	 * Difference between "==" and "equals" in Java:
+	 *  
+	 *  assertSame()
+	 *  "==" compares the memory location of two objects
+	 *  	String x1 = "hello"
+	 *  	String x2 = new String("hello"); 
+	 *  	x1 and x2 are different objects as they are stored in different memory locations, even though they have the same value.
+	 *  
+	 *  assertEquals()
+	 *  "equals" compares the contents of two object
+	 *     String y1 = "apple"; 
+	 *     String y2 = new String("apple");
+	 *     y1 and y2 are same as they have same contents
+	 */
 }
