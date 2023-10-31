@@ -2,9 +2,10 @@ package testingMoreExamples;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+
 
 public class CalculatorTest {
 	
@@ -16,14 +17,13 @@ public class CalculatorTest {
 	    }
 
 	  
-	   
-	  
 	    @Test
 	    public void testSubtraction() {
 	        Calculator calculator = new Calculator();
 	        int result = calculator.subtract(5, 2);
-	        assertEquals(3, result);
+	        assertEquals(93, result);
 	    }
+	    
 	    
 	    @BeforeEach
 	    public void checkCalculatorMultiplication() {
