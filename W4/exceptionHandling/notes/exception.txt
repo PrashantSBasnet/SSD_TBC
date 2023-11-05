@@ -1,0 +1,96 @@
+
+-Exception is an object that can be thrown and indicate conditions that an application might want to catch.
+-Exception disrupts the normal flow of the program's instructions.
+
+-Exception Handling allows a programmer to deal with these unexpected situations gracefully.
+  
+ ------------------------------------------------------------------------------------ 
+  ##Types of Exception
+
+  1. Checked Exception
+  -Checked exceptions are those that the compiler requires you to handle explicitly using try-catch blocks.
+  -or specify in the method signature using the throws keyword
+  -Recoverable	
+  Examples:												
+ 	  --FileNotFoundException <<extends>> IOException
+  	  --InterruptedExceptions
+      --InstantiationException
+      --SQLException
+      --ClassNotFoundException	
+      
+  2. Unchecked Exception
+  -"unchecked" because the compiler does not enforce any explicit handling or catching of these exceptions
+  - They are not checked at compile-time, so if you don’t handle them, your program might compile without any errors, but they can still occur during runtime, leading to unexpected program termination or issues
+  - Example: NullPointerException
+ 
+ ----------------------------------------------------------------------------------------
+ 
+Class Throwable
+	
+	java.lang.Object
+		java.lang.Throwable
+
+All Implemented Interfaces:
+		Serializable
+Direct Known Subclasses:
+		Error, Exception
+ 
+ 
+-The Throwable class is the superclass of all errors and exceptions in the Java language
+-Only objects that are instances of this class (or one of its subclasses) are thrown by the Java Virtual Machine or can be thrown by the Java throw statement.
+-Similarly, only this class or one of its subclasses can be the argument type in a catch clause. 
+-For the purposes of compile-time checking of exceptions, Throwable and any subclass of Throwable that is not also a subclass of either RuntimeException or Error are regarded as checked exceptions. 
+ 
+ 
+ ---------------------------------------------
+ 
+  ##Error 
+  -Subset of throwables 
+  -Indicates serious problems in application 
+  -Should not be caught or handled 
+  -Unchecked throwables -Common errors: IOError
+ 
+  eg.-- Virtual Machine Error, Assertion Error
+   
+   VirtualMachineError
+  -Unrecoverable input/output error 
+  -Indicates running out of resource for JVM 
+  -Serious issue with underlying file system 
+  -Internal
+   Error, Unknown Error, OutOfMemoryError, Stack Overflow Error(commonly recursion will lead into it)
+  
+  -------------------------------------------------------------------------------------
+  
+  Handling Exceptions
+  
+  *When a method throws a checked exception, it must either catch that exception using a try-catch block or declare the exception using throws in the method signature.
+	
+	-try-catch block 
+	--Used for catching exceptions. The try block contains the code that might throw an exception, and the catch block handles the exception.
+	
+	-throw 
+	   --Used to explicitly throw an exception.
+	   -- throw is used to actually throw an exception at a specific condition inside a method,   
+	        void sampleMethod(){
+	        	 if(faultyCondition){
+	        	 		throw new SomeException("custom message");
+	        	 		}
+	        	 	}
+	        	 	
+	-finally block: Contains code that will be executed whether an exception is thrown or not. Typically used for resource cleanup.
+  
+  
+  throws Exception: 
+  - public void example() throws Exception{....} 
+  - 'throws' is used in the method declaration to declare that a method may throw one or more exceptions
+  - when you want to signal that a method may encounter exceptions but leave the responsibility for handling those exceptions to the caller.
+  - This is often done when you want to maintain a clean separation of concerns and error-handling responsibilities. 
+  - If an exception occurs within the method, it will not be caught within the method itself. Instead, the caller of the method will be responsible for handling the exception or
+    declaring it to be thrown further up the call chain. 
+  - Declaring a method to throw a generic Exception provides little information about the specific types of exceptions that might occur, which can make it harder for callers to handle them appropriately.
+  
+  -------------------------------------------------------------------------------------
+  
+  Exception Propagation
+  -Propagation: When an exception is not caught in a method, it propagates up the call stack until it's caught or the program terminates.
+  -Throws clause: Used to declare exceptions that a method might throw, which allows the calling method to handle or propagate the exception further.
