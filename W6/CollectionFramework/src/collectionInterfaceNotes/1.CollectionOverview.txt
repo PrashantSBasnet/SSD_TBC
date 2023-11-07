@@ -5,6 +5,7 @@ Common Operation in Data Structures:
 3. Manage (Replace an element, remove an element)
 4. Retrieve
 
+
  
 Collection is an object that represents a group of objects.
 ->We use collection to hold or transfer a group of objects from one location to another
@@ -13,8 +14,7 @@ Collection is an object that represents a group of objects.
 # Therefore, every Collection (Classes or Interface) implements Serializable Interface and Cloneable Interface (by default)
 	(Serializable Interface and Cloneable Interface do not have any methods. They act as a marker/signal only)
 # Cloneable interface is to make a copy of the object and compare
-	Object.clone()
-
+	 Object.clone()
 
 
 
