@@ -10,7 +10,7 @@ public class Driver {
 
 		// IOExceptionExample.ioExceptionExample();
 
-		// FileNotFoundExceptionExample.fileNotFoundException();
+		 FileNotFoundExceptionExample.fileNotFoundException();
 
 		
 
@@ -25,7 +25,7 @@ public class Driver {
 	
 
 		/** ----- */
-		 HandleMultipleExceptions.handleMultipleException();
+		// HandleMultipleExceptions.handleMultipleException();
 		// MethodSignature methodSignature = new MethodSignature();
 		// methodSignature.anotherMethod();
 		

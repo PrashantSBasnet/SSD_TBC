@@ -35,7 +35,7 @@ public class HandleMultipleExceptions {
 			System.err.println("An I/O error occurred while reading input.");
 			
 		} finally {
-			
+			System.out.println("bye");
 			try {
 				reader.close();
 			} catch (IOException e) {
