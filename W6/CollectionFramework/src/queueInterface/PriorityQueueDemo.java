@@ -8,13 +8,13 @@ public class PriorityQueueDemo {
 
 	public static void main(String[] args) {
 		
-		PriorityQueue pq = new PriorityQueue();
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
 	
-		PriorityQueue pq2 = new PriorityQueue(20);
+		PriorityQueue<String> pq2 = new PriorityQueue<>(20);
 	
 		//PriorityQueue pq3 = new PriorityQueue(int initialCapacity, Comparator c);
 
-		SortedSet s = new TreeSet();
+		SortedSet<String> s = new TreeSet<>();
 		//PriorityQueue pq4 = new PriorityQueue(SortedSet s);
 		
 		//List l = new ArrayList();

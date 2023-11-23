@@ -1,19 +1,20 @@
 package listInterface;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListDemo {
 	
 	public static void main(String [] args) {
 		
-		ArrayList al = new ArrayList<>(); //default size: 10 (0-9 index) 
+		List<Object> al = new ArrayList<>(); //default size: 10 (0-9 index) 
 		//ArrayList<Object> al = new ArrayList<>(); //as we do not know the specific type that the arrayList holds.
 		
-		ArrayList aList = new ArrayList(30); //defining size by calling ArrayList(x) constructor
+		List<Integer> aList = new ArrayList<>(30); //defining size by calling ArrayList(x) constructor
 	
 		al.add("John");
 		al.add(true);
-		al.add(10);
+		al.add(10); //Autoboxing
 		
 		System.out.println(al);
 		
@@ -27,7 +28,7 @@ public class ArrayListDemo {
 		//boolean b = al.get(0); //you get compile time error because compile cannot figure it out.
 								 
 		//Generic ArrayList
-		ArrayList<String> strArrayList = new ArrayList<String>();
+		ArrayList<String> strArrayList = new ArrayList<>();
 		
 		
 		

@@ -11,13 +11,13 @@ public class ListExample {
 	public static void main(String [] args) {
 		
 		//We create its instance using its implementation classes as it is an Interface
-		List a = new ArrayList(); //creating obj of ArrayList class. 
+		List<String> a = new ArrayList<>(); //creating obj of ArrayList class. 
 		
-		List l = new LinkedList();
+		List<Integer> l = new LinkedList<>();
 		
-		List v = new Vector();
+		List<Double> v = new Vector<>();
 		
-		List s = new Stack();
+		List<String> s = new Stack<>();
 	
 	}
 

@@ -8,10 +8,13 @@ import java.util.Stack;
 public class StackDemo {
 	
 	public static void main(String[] args) {
-		Stack s = new Stack<>();
+		
+		Stack<Object> s = new Stack<>();
+		
+		//LIFO
 		s.push("A");
 		s.push("B");
-		s.push(13);
+		s.push(13);  //Autoboxing is the process of converting a primitive type to its corresponding wrapper class (int to Integer)
 		s.push(true);
 		s.push(null);
 		
@@ -21,6 +24,8 @@ public class StackDemo {
 		System.out.println(s);
 		
 		Object obj = s.peek();	//returns the value at the top (front)
+		System.out.println (s.peek());
+		
 		System.out.println(s);
 		
 		System.out.println(s.empty());
@@ -41,21 +46,21 @@ public class StackDemo {
 		
 		
 		
-		Iterator it = s.iterator(); //creating Iterator object
+		Iterator<Object> it = s.iterator(); //creating Iterator object
 		
 		while (it.hasNext()) { //returns true or false
 			Object val = it.next(); 
 			//System.out.println(val);
 		}
 		
-	    Stack stack = new Stack<>();
+	    Stack<Integer> stack = new Stack<>();
         stack.push(12);
         stack.push(13);
         stack.push(14);
         stack.push(13);
         stack.push(15);
 
-        Iterator iterator = stack.iterator();
+        Iterator<Integer> iterator = stack.iterator();
       
         while (iterator.hasNext()) {
             Object element = iterator.next();
@@ -66,5 +71,7 @@ public class StackDemo {
 
         // Now, the elements '13' in the stack have been removed.
       // System.out.println(stack); // [12, 14, 15]
+        
+ 
     }
 }

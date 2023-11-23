@@ -5,13 +5,13 @@ import java.util.LinkedList;
 public class LinkedListDemo {
 	
 	public static void main(String[] args) {
-		LinkedList linkedList = new LinkedList();
+		LinkedList<String> linkedList = new LinkedList<>();
 		//LinkedList linkedList2 = new LinkedList(Collection c); //using parameterized constructor of Linked List
 
 		//available methods: all those present in Collection Interface, List Class and LinkedList
 		linkedList.add("John"); //0 index
 		linkedList.add(null);   //1 index
-		linkedList.add(10);     //2 index
+		linkedList.add("box");     //2 index
 		
 		System.out.println(linkedList);
 		

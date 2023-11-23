@@ -7,7 +7,7 @@ public class SortedSetDemo {
 	
 	public static void main(String[] args) {
 		
-		SortedSet s = new TreeSet();
+		SortedSet<Integer> s = new TreeSet<>();
 		
 		s.add(7);
 		s.add(1);
