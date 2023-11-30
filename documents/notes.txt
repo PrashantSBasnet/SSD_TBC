@@ -1,0 +1,41 @@
+TodoTodo: Halla Nagara 
+
+Shashank -- list
+S h a n k -- set (no duplicates) 
+
+
+Sets - duplicate X
+
+Maps  - {key, value}
+		{Sets, value}
+		
+		{1, "abc"}
+		{2, "abc}
+		{3, "apple"}
+		{4, 54.09}
+		{1, "ball}  X
+		
+		
+		Animal abc = new Dog();
+		Animal abc2 = new Cat();
+		
+		 
+		
+		
+		ArrayList<Integet> arList = new ArrayList<>();
+		LinkedList<Double> lnList = new LinkedList<>();
+		
+		
+		Set<String> stEg = new HashSet<>();
+		Set<Double> stEg2 = new LinkedHashSet<>();
+		Set<Integer> stEg3 = new TreeSet<>();
+		
+		Map<Integer, String> mp = new HashMap<>();
+		Map<Integer, String> mp2 = new LinkedHashMap<>();
+		Map<Integer, String> mp3 = new TreeMap<>();
+		
+		
+		
+		Tree            Hash              LinkedHashMap
+		ordered         not ordered       combination of linked and hash
+										  insertion order maintained

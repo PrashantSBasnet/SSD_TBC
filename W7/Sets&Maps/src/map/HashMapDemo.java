@@ -1,9 +1,13 @@
 package map;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Queue;
+import java.util.Set;
 import java.util.Stack;
+import java.util.TreeMap;
 
 public class HashMapDemo {
 	
@@ -19,6 +23,24 @@ public class HashMapDemo {
 	
 		//create new map
 	//	HashMap newMap = new HashMap(map2);
+		
+		
+		//Example
+		
+		Set<String> ab = new HashSet<>();
+		ab.add("apple");
+		
+		Map<String, Integer> sampleMap = new LinkedHashMap<>();
+		sampleMap.put("Thapathali", 4200);
+		sampleMap.put("Balkhu", 5322);
+		
+		
+		Map<Integer, String> sampleMap2 = new HashMap<>();
+		sampleMap2.put(1, "Shasank");
+		sampleMap2.put(2, "Erika");
+		sampleMap2.put(3, "Manoj");
+		
+
 		
 		HashMap<String, Integer> marks = new HashMap<>();
 		marks.put("Maths", 90);
