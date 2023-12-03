@@ -8,7 +8,8 @@ import java.util.ListIterator;
 public class IteratorExample {
 	
 	 public static void main(String[] args) {
-	        List<String> myList = new ArrayList<>();
+	       
+		 List<String> myList = new ArrayList<>();
 
 	        // Adding elements to the list
 	        myList.add("Apple");
@@ -48,6 +49,7 @@ public class IteratorExample {
 	        }
 
 	        // Display the modified list
+	        //using for each loop
 	        System.out.println("\nList after modification:");
 	        
 	        for (String fruit : myList) {
@@ -56,6 +58,7 @@ public class IteratorExample {
 	        
 	        
 	        //removing an element from the list
+	        //using iterator
 	        System.out.println("\nList after removing Strawberry:");
 	        
 	       while (listIterator.hasNext()) {
@@ -70,6 +73,13 @@ public class IteratorExample {
 	       while(iterator.hasNext()) {
 	    	   System.out.println(iterator.next());
 	       }
-	    }
+	    
+	 
+	
+	 	//lambda expression
+	 	System.out.println("\n using lambda");
+	 	myList.forEach( (n) -> { System.out.println(n); });
+		 
+	 }
 
 }
