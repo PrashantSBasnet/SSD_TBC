@@ -2,7 +2,7 @@ package comparableComparator;
 
 import java.util.Comparator;
 
-public class MySorting implements Comparator{
+public class MySorting implements Comparator<Object>{
 
 	@Override
 	public int compare(Object o1, Object o2) {
@@ -18,5 +18,4 @@ public class MySorting implements Comparator{
 		else 
 			return 0;
 	}
-
 }

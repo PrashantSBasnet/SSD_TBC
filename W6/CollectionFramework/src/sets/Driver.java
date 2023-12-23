@@ -1,11 +1,18 @@
-package sets;
+   package sets;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.Queue;
 import java.util.Set;
+import java.util.Stack;
 import java.util.TreeSet;
+import java.util.Vector;
 
 
 /**
@@ -30,17 +37,46 @@ public class Driver {
 		Set<String> stEg = new HashSet<>();
 		Set<Double> stEg2 = new LinkedHashSet<>();
 		Set<Integer> stEg3 = new TreeSet<>();
-		
+		Set<Float> str = new HashSet<Float>();
+		Set<?> st2 = new HashSet<>();
 		
 		Set<Room> rooms = new HashSet<>();
 		rooms.add(westminister);
 		rooms.add(piccadilly);
 		rooms.add(oxford);
 		rooms.add(oxford);
+		rooms.add(new Room("Oxford", "Premiere Room", 4, 200.00)); 
 		
 		for(Room x: rooms) {
 			System.out.println(x);
 		}
+		
+		Map<Integer,String> x = new HashMap<Integer,String>();
+		Map<Integer,Object> x1 = new HashMap<>();
+		x.put(1, "apple");
+		
+		Employee emp = new Employee("Suyog", 1343342);
+		x1.put(1, emp);
+		x1.put(2, new Employee("Manoj", 342342));
+		
+		
+		Stack<Integer> abc;
+		List<Integer> abc2 = new ArrayList<>(); 
+		List<Integer> x2 = new LinkedList<>(); 
+		
+		ArrayList<Integer> y = new ArrayList<>();
+		LinkedList<Double> z = new LinkedList<>();
+		
+		Stack<String> xzy = new Stack<>();
+		List<String> abcd = new Stack<>();
+		Vector<String> ab = new Stack<>();
+		
+		Queue<Double> abc3;
+		Map<Integer,String> abc4;
+		
+		Set<String> abc5 = new HashSet<>();
+				
+		
 		
 		
 	}

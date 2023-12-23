@@ -1,5 +1,8 @@
 package comparableComparator;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.TreeSet;
 
 public class ComparableDemo {
@@ -15,7 +18,8 @@ public class ComparableDemo {
 		data.add(15);
 		data.add(10);
 		
-		//System.out.println(data); //you will not get duplicates
+	
+		System.out.println(data); //you will not get duplicates
 	
 	//---------------------------------------
 
@@ -29,6 +33,8 @@ public class ComparableDemo {
 		data2.add(10);
 		
 		System.out.println(data2); //you will not get duplicates
+		
+		
 		
 	}
 }
