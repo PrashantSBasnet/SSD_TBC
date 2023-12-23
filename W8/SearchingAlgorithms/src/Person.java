@@ -11,15 +11,19 @@ public class Person {
     	this.age=age;
     }
 
-    /**
-     * equals() method is overridden to compare the name and age fields of two Person objects.
-     */
+   
+    
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Person person = (Person) obj;
-        return age == person.age && Objects.equals(name, person.name);
+        
+    	if (this == obj) return true;  //reference check
+        
+        if (obj == null || getClass() != obj.getClass()) return false; //Check if the object to compare (obj) is null or of a different class. If so, the objects are not equal.
+        
+        Person person = (Person) obj; //Type Casting
+        
+        return age == person.age && Objects.equals(name, person.name); //Filed Comparison: Compare the individual fields for equality. 
+        // In this case, it compares the age field using == and the name field using Objects.equals() to handle null values.
     }
 
     /**
