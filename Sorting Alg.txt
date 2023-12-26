@@ -1,0 +1,48 @@
+Bubble Sort
+
+ Compare each element with another and swap if the latter is smaller
+ Sorted elements are placed towards right
+ Ascending order
+
+ LOOP n times 
+
+*************************************************
+
+Selection Sort
+
+Loop 1st
+1. First, set minimumIndex =0
+2. Next, figure out the index holding min value by iterating through the elements and comparing it with the value at index =0
+3. If val at particular index < val at min index swap index and finally the item
+4. Sorted Values are towards the left
+
+Loop 2nd
+   Repeat by assigning minimumIndex=1 because the value at 1 is the smallest, hence sorted.
+
+Loop 3rd 
+   Repeat
+   2 items are sorted
+...   
+
+Loop n-1
+   All elements are sorted except the last one.
+   Hence, the last element is already sorted.
+   
+  
+*************************************************
+Insertion Sort
+
+LOOP1
+Pick the 2nd element and compare with the 1st
+If the 2nd element < the 1st element ---> SWAP
+
+LOOP2 
+Pick the 3rd element and compare with the 2nd 
+if 3rd element<2nd element ---> SWAP else { do nothing }
+also if 3rd element<1st element ---> SWAP else { do nothing }
+
+LOOP3 
+
+
+LOOP (n-1)
+Hence, all sorted

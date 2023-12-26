@@ -1,4 +1,3 @@
-
 /*
  * The hashCode() method in Java returns a 32-bit signed integer (int).
  * The range of possible hash code values is from Integer.MIN_VALUE to Integer.MAX_VALUE, inclusive. 

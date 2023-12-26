@@ -1,21 +1,22 @@
-
 import java.util.Objects;
 
 public class Person {
-    private String name;
+    
+	private String name;
     private int age;
 
-    // Constructor and other methods...
     Person (String name, int age){
     	this.name=name; 
     	this.age=age;
     }
 
-   
-    
+    /*
+     *  This implementation adheres to best practices for implementing the equals() method.
+     *  It considers both reference equality and content equality, handles null values, and ensures proper type checking. 
+     *  Additionally, using Objects.equals() for comparing objects allows for proper handling of null values, which is a good practice to avoid potential NullPointerExceptions.
+     */
     @Override
     public boolean equals(Object obj) {
-        
     	if (this == obj) return true;  //reference check
         
         if (obj == null || getClass() != obj.getClass()) return false; //Check if the object to compare (obj) is null or of a different class. If so, the objects are not equal.
@@ -26,7 +27,8 @@ public class Person {
         // In this case, it compares the age field using == and the name field using Objects.equals() to handle null values.
     }
 
-    /**
+    
+    /*
      * hashCode() method is overridden to generate a hash code based on the name and age fields using Objects.hash().
      */
     @Override
@@ -34,6 +36,7 @@ public class Person {
         return Objects.hash(name, age);
     }
 
+    
     public static void main(String[] args) {
         // Creating instances of Person
         Person person1 = new Person("John", 25);
