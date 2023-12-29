@@ -1,26 +1,29 @@
-Bubble Sort
+BUBBLE Sort
 
- Compare each element with another and swap if the latter is smaller
- Sorted elements are placed towards right
- Ascending order
+Compare each element with another and swap if the latter is smaller
+Sorted elements are placed towards right
+Ascending order
 
- LOOP n times 
+LOOP n times 
 
 *************************************************
 
-Selection Sort
+SELECTION Sort
 
 Loop 1st
 1. First, set minimumIndex =0
-2. Next, figure out the index holding min value by iterating through the elements and comparing it with the value at index =0
-3. If val at particular index < val at min index swap index and finally the item
+2. Next, figure out the index holding min value by iterating through the elements and comparing it with the value at min index
+3. If val at particular index < val at min index swap index and continue comparing with the new value
+4. When the smallest is found, swap with the value at minimumIndex=0
 4. Sorted Values are towards the left
 
 Loop 2nd
    Repeat by assigning minimumIndex=1 because the value at 1 is the smallest, hence sorted.
+   Swap the smallest value with value at minimumIndex=1
 
 Loop 3rd 
    Repeat
+   Swap the smallest value with value at minimumIndex=2
    2 items are sorted
 ...   
 
@@ -30,7 +33,8 @@ Loop n-1
    
   
 *************************************************
-Insertion Sort
+
+INSERTION Sort
 
 LOOP1
 Pick the 2nd element and compare with the 1st
@@ -46,3 +50,27 @@ LOOP3
 
 LOOP (n-1)
 Hence, all sorted
+
+*************************************************
+
+QUICK Sort 
+
+1. Pick a Pivot point (The first element)
+2. Compare other elements with the pivot point
+3. If we find an element < the pivot, exchange with the first item that is greater than pivot 
+4. Swap pivot element with the last element that is less than
+5. The pivot element is SORTED.
+6. Elements < Pivot element  ---> left   ---> Quick Sort
+7. Elements > Pivoit element ---> right  ---> Quick Sort
+
+*************************************************
+
+
+Hash Collision
+1. Linear Probing : store in another address
+2. Separate Chaining: create a linked list 
+
+
+
+
+

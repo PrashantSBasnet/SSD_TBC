@@ -1,0 +1,79 @@
+Bubble Sort:
+
+Time Complexity:
+Best Case: O(n) - when the list is already sorted.
+Worst Case: O(n^2) - when the list is in reverse order.
+Average Case: O(n^2)
+Space Complexity: O(1) - Bubble sort is an in-place sorting algorithm.
+
+************************************************************************
+
+Insertion Sort:
+
+Time Complexity:
+Best Case: O(n) - when the list is nearly sorted.
+Worst Case: O(n^2) - when the list is in reverse order.
+Average Case: O(n^2)
+Space Complexity: O(1) - Insertion sort is an in-place sorting algorithm.
+
+
+************************************************************************
+
+Selection Sort:
+
+Time Complexity:
+Best Case: O(n^2) - no best case advantage.
+Worst Case: O(n^2) - regardless of the input.
+Average Case: O(n^2)
+Space Complexity: O(1) - Selection sort is an in-place sorting algorithm.
+
+
+************************************************************************
+
+Merge Sort:
+
+Time Complexity:
+Best Case: O(n log n) - when the input is divided evenly.
+Worst Case: O(n log n) - always, because it consistently divides the input in half.
+Average Case: O(n log n)
+Space Complexity: O(n) - Merge sort typically requires additional space for the merging process.
+
+************************************************************************
+
+
+Quick Sort:
+
+Time Complexity:
+Best Case: O(n log n) - when the pivot always divides the array into two equal halves.
+Worst Case: O(n^2) - when the pivot consistently results in unbalanced partitions.
+Average Case: O(n log n)
+
+************************************************************************
+
+Insertion Sort 						Merge Sort
+small no. of elements 				larger no. of elements
+
+
+
+O(1)
+Insertion/Removal from LinkedList, HashSet, HashMap
+Searching in hash table based
+
+O(n)
+Insertion/Removal in Array-Based
+Searching in LinkedList
+
+O(log n)
+Insertion/Removal and searching in a Binary-Type Tree
+TreeSet or TreeMap
+
+**********************************************************
+
+Notation						Name 						(put n=32)
+O(1)							constant time				 1
+O(log n)  						logarithmic					 5
+O(n)							linear						 32
+O(n log n)						linearithmic				 160
+O(n^2)							quadratic					 1024						nested for loop
+O(n^3)							cubic					     32768						nested for loop 
+O(2^n) 							exponential 				 4294967296
