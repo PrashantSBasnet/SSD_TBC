@@ -3,35 +3,8 @@ BUBBLE Sort
 Compare each element with another and swap if the latter is smaller
 Sorted elements are placed towards right
 Ascending order
+ 
 
-LOOP n times 
-
-*************************************************
-
-SELECTION Sort
-
-Loop 1st
-1. First, set minimumIndex =0
-2. Next, figure out the index holding min value by iterating through the elements and comparing it with the value at min index
-3. If val at particular index < val at min index swap index and continue comparing with the new value
-4. When the smallest is found, swap with the value at minimumIndex=0
-4. Sorted Values are towards the left
-
-Loop 2nd
-   Repeat by assigning minimumIndex=1 because the value at 1 is the smallest, hence sorted.
-   Swap the smallest value with value at minimumIndex=1
-
-Loop 3rd 
-   Repeat
-   Swap the smallest value with value at minimumIndex=2
-   2 items are sorted
-...   
-
-Loop n-1
-   All elements are sorted except the last one.
-   Hence, the last element is already sorted.
-   
-  
 *************************************************
 
 INSERTION Sort
@@ -47,23 +20,162 @@ also if 3rd element<1st element ---> SWAP else { do nothing }
 
 LOOP3 
 
+...
+...
 
-LOOP (n-1)
 Hence, all sorted
 
+
+Example: 
+Intial Array: 
+[5, 3, 1, 4, 2]
+
+Sort
+Begin with the second element (3) and compare it with the first element (5).
+Since 3 is smaller than 5, swap them.
+[3, 5, 1, 4, 2]
+
+Move to the third element (1) and compare it with the previous elements (3 and 5).
+1 is smaller than 3 and 5, so we shift them to the right and place 1 in the correct position.
+[1, 3, 5, 4, 2]
+
+Continue Sorting
+Move to the next element (4) and insert it into its correct position.
+[1, 3, 4, 5, 2]
+
+Final Step: [1, 2, 3, 4, 5]
+
+**************************************************
+
+SELECTION Sort
+
+Loop 1st
+1. First, set minimumIndex =0
+2. Next, figure out the index holding min value by iterating through the elements and comparing it with the value at min index
+3. If val at particular index < val at min index swap index and continue comparing the new value placed at new index
+4. When the smallest is found, swap with the value at minimumIndex=0 with that placed at new minimumIndex
+4. Sorted Values are towards the left
+
+Loop 2nd
+   Repeat by assigning minimumIndex=1 because the value at 1 is the smallest, hence sorted.
+   Swap the smallest value with value at minimumIndex=1
+
+Loop 3rd 
+   Repeat
+   Swap the smallest value with value at minimumIndex=2
+   2 items are sorted
+...   
+... 
+   All elements are sorted except the last one.
+   Hence, the last element is already sorted.
+   
+ 
+
+Example: 
+
+Initial Array: [9, 4, 5, 3, 2, 1, 7]
+
+Find the minimum element and swap it with the first element
+[1, 4, 5, 3, 2, 9, 7]
+
+Find the minimum element in the remaining unsorted portion and swap it with the second element:
+[1, 2, 5, 3, 4, 9, 7]
+
+Third
+[1, 2, 3, 5, 4, 9, 7]
+
+Fourth
+[1, 2, 3, 4, 5, 9, 7]
+
+Fifth
+[1, 2, 3, 4, 5, 7, 9]
+
+Final
+[1, 2, 3, 4, 5, 7, 9]   hence, sorted. 
+
 *************************************************
+
+MERGE Sort
+1. Divide and Conquer algorithm
+2. Input array is divided into two halves
+3. Each half is sorted and merged
+
+Function Involved:
+	merge() -> to merge two halves
+		
+	MergeSort() -> recursively calls itself to divide the array till size becomes one
+	
+Example: 
+Initial 7 elements:		[9, 4, 5, 3, 2, 1, 7]
+First Split: 			[9, 4, 5]   [3, 2, 1, 7]
+Second Split: 			[9] [4, 5]   [3] [2, 1, 7]
+Third Split: 	        [9] [4] [5]   [3] [2] [1, 7]
+Fourth Split:			[9] [4] [5]   [3] [2] [1] [7]	
+
+Merging (maintaining sorted order)
+First Merge:			[4, 5, 9]   [1, 2, 3, 7]
+Second Merge:			[1, 2, 3, 4, 5, 7, 9]
+
+Final Sorted Arr:       [1, 2, 3, 4, 5, 7, 9]
+
+***************************************************
 
 QUICK Sort 
 
 1. Pick a Pivot point (The first element)
 2. Compare other elements with the pivot point
 3. If we find an element < the pivot, exchange with the first item that is greater than pivot 
-4. Swap pivot element with the last element that is less than
+4. Swap pivot element with the last element that is less than the pivot
 5. The pivot element is SORTED.
 6. Elements < Pivot element  ---> left   ---> Quick Sort
 7. Elements > Pivoit element ---> right  ---> Quick Sort
 
+
+
+Example:
+
+Initial Array: [9, 4, 5, 3, 2, 1, 7]
+
+Choose Pivot: 7 (choose first element as pivot, middle element as pivot or last element as pivot for the best performance)
+
+Partitioning 
+	Partition the array around the pivot:
+		All elements less than the pivot are on the left
+		All elements greater than the pivoit are on the right
+			[4, 5, 3, 2, 1]   [7]   [9]	
+			
+Recursive Sorting
+	Applying quicksort algorithm recursively to the subarrays on the left and right of the pivot
+		For the left subarray [4, 5, 3, 2, 1], Choose the pivot (let's say 3)
+		Partition
+			[2, 1]   [3]   [4, 5]
+
+Combine the sorted SubArrays
+[2, 1, 3, 4, 5, 7, 9]
+
+Final Sorted Array
+[1, 2, 3, 4, 5, 7, 9]
+
 *************************************************
+
+Radix Sort
+-> only applicable to sort numbers
+-> sort the numbers from the least significant to the most significant
+
+[170, 90, 802, 2, 24, 45, 75, 66]
+
+Step 1: Sort by the least significant digit (1s place):
+[170, 90, 802, 2, 24, 45, 75, 66]
+
+Step 2: Sort by the next significant digit (10s place):
+[802, 2, 24, 45, 66, 170, 75, 90]
+
+Step 3: Sort by the most significant digit (100s place):
+[2, 24, 45, 66, 75, 90, 170, 802]
+
+
+*************************************************
+
 
 
 Hash Collision

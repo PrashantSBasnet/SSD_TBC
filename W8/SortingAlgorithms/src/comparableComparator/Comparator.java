@@ -19,11 +19,6 @@ public class Comparator {
 		 
 		 //Collections.sort(people, new Comparator<Person>() {
 		 
-		
-		
-		 
-		 
-		
 		}
 		
 }
