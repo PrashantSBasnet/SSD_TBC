@@ -159,8 +159,13 @@ Final Sorted Array
 *************************************************
 
 Radix Sort
+
 -> only applicable to sort numbers
 -> sort the numbers from the least significant to the most significant
+-> non-comparative sorting algorithm, and its efficiency is often dependent on the characteristics of the input data. 
+   It performs well when the range of the input is not significantly larger than the number of elements and when the 
+   distribution of elements across digits is relatively uniform
+   
 
 [170, 90, 802, 2, 24, 45, 75, 66]
 

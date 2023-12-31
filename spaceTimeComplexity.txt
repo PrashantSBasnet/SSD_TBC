@@ -8,7 +8,7 @@ Average Case: O(n^2)
 Space Complexity: O(1) - Bubble sort is an in-place sorting algorithm.
 
 -> Simple and easy to implement, therefore suitable for smaller datasets
--> Performs very well when data is partially sorted
+-> Performs very well when data is partially/nearly sorted but efficiency is lower to Insertion Sort 
 -> In-place sorting algorithm meaning they do not require additional memory proportional to the size of the input
 
 ************************************************************************
@@ -23,7 +23,7 @@ Average Case: O(n^2)
 Space Complexity: O(1) - Insertion sort is an in-place sorting algorithm.
 
 -> Simple and easy to implement, therefore suitable for smaller datasets
--> Performs very well when data is nearly sorted
+-> Performs very well when data is nearly/partially sorted ***
 -> Not the most efficient algorithm for large datasets
 -> In-place sorting algorithm meaning they do not require additional memory proportional to the size of the input
 
@@ -94,23 +94,58 @@ O(nk)
  and when the distribution of elements across digits is relatively uniform.
  
 ************************************************************************
+************************************************************************
 
-Insertion Sort/Bubble Sort 							Merge Sort/Quick Sort
--> small no. of elements 							->	larger no. of elements
+
+---Key Highlights---
+
+Insertion Sort/Bubble Sort 			 |				Merge Sort/Quick Sort
+-> small no. of elements 			 | 				->	larger no. of elements
+
+Merge Sort							 |			    Quick Sort
+-> O(log n) worst case			     |				-> O(n^2) worst case	
+-> O(n) space complexity			 |				-> O(log n) space complexity influenced by the recursion depth
+
+
+Insertion Sort 						 |				Bubble Sort
+->best for nearly/partially sorted	 |			    ->compared to Insertion Sort, less efficiency for nearly/partially sorted
+
+
+---------------------------------------------------------
+
+# Sorting algorithm known for its stablity: Merge Sort
+# The primary advantage of Radix Sort over comparison-based sorting algorithms: Not affected by the initial order of the input
+# In place sorting algorithm: O(1) space complexity: Bubble and Insertion Sort
+# QuickSort perform poorly? : Already sorted Data 
+	Reason:	
+		This is because QuickSort's partitioning strategy involves selecting a pivot element and partitioning the array into two sub-arrays
+		such that elements less than the pivot are on the left and elements greater than the pivot are on the right. 
+		If the data is already sorted or nearly sorted, there's a higher probability that the pivot chosen is the smallest or largest element,
+		leading to unbalanced partitions.
+		
+		In this case, the worst case O(n^2) is the time complexity due to unbalanced partition.
+
 
 ************************************************************************
 
 O(1)
 Insertion/Removal from LinkedList, HashSet, HashMap
 Searching in hash table based
+In-place sorting algorithm: Bubble Sort and Insertion Sort
 
 O(n)
 Insertion/Removal in Array-Based
 Searching in LinkedList
+Space Complexity of Merge Sort
+
 
 O(log n)
 Insertion/Removal and searching in a Binary-Type Tree
 TreeSet or TreeMap
+Space complexity of Quick Sort
+
+O(n log n)
+Average Time Complexity: Sorting in Quick and Merge Sort
 
 **********************************************************
 
