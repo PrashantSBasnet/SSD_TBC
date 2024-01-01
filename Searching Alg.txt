@@ -1,0 +1,107 @@
+Binary Search:
+- Requires array to be sorted
+	
+Example: 
+Intital array: [8, 5, 3, 2, 1, 3, 5]
+
+Sorting using any sorting algorithm, we get 
+			[1,2,3,3,5,5,8]
+			
+			
+Requirement: Find 3	
+1. Sorted Array: [1, 2, 3, 3, 5, 5, 8]
+
+2. Initial Search Interval
+	Low: 0
+	High: 6 (length of array - 1)
+	
+3. Iteration 1 
+	Midpoint: (0 + 6) // 2 = 3
+	Compare arr[3] with target (3). Match found.
+
+if match is not found, 
+#	If the element at the midpoint is greater than the target value, 
+	the search continues in the left half of the remaining interval because the target, if present, must be in the left half.
+
+#   If the element at the midpoint is less than the target value, the search continues in the right half of the remaining 
+	interval because the target, if present, must be in the right half.	
+	
+
+Time Complexity: 
+Best Case: O(1) (when target element is found in the middle of the array in the first comparison)
+Worst Case: O(log n) (when the target element is the last element to be checked or is not present in the array)
+
+
+Space Complexity: O(1)
+
+Sample MCQs: 
+1. What is the key requirement for using binary search on a list of elements?
+	a. Elements must be in ascending order
+	b. Elements must be in descending order
+	c. Elements can be in any order
+	d. Elements must be prime numbers
+
+2. In binary search, how does the algorithm decide whether to search the left or right half of the array?
+	a. Randomly
+	b. Based on the value of the middle element
+	c. Alternating between left and right
+	d. Always starts with the left half
+
+3. What is the time complexity of binary search in the worst case?
+	a. O(1)
+	b. O(log n)
+	c. O(n)
+	d. O(n log n)
+
+4. Binary search is most effective on:
+	a. Unsorted arrays
+	b. Arrays with duplicate elements
+	c. Large datasets
+	d. Sorted arrays
+
+****************************************************************
+Linear Search:
+-> iterating through each element in the collection until the target element is found or the end of the collection is reached
+
+Time Complexity: 
+Worst-case time complexity: O(n)
+Average-case time complexity: O(n)
+Best-case time complexity: O(1)    (if target element found at the beginning of the collection)
+
+Space complexity: O(1)
+
+5. What is the time complexity of linear search in the worst case?
+	a. O(1)
+	b. O(log n)
+	c. O(n)
+	d. O(n^2)
+
+6. Linear search is also known as:
+	a. Binary search
+	b. Sequential search
+	c. Interpolation search
+	d. Exponential search
+
+7. In linear search, the search process stops when:
+	a. The end of the array is reached
+	b. The desired element is found
+	c. The middle element is reached
+	d. The array is sorted
+
+8. In which scenario is linear search preferred over binary search?
+	a. Large sorted arrays
+	b. Small unsorted arrays
+	c. Arrays with random order
+	d. Arrays with repeating elements
+
+
+
+Answers:
+1 a. Elements must be in ascending order
+2 b. Based on the value of the middle element
+3 b. O(log n)
+4 d. Sorted arrays
+5 c. O(n)
+6 b. Sequential search
+7 b. The desired element is found
+8 b. Small unsorted arrays

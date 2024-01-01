@@ -1,0 +1,131 @@
+1. What is the main purpose of encapsulation in OOP?
+	a. Achieving code reusability
+	b. Achieving modularity
+	c. Data hiding and protection
+	d. Polymorphism
+
+2. Which OOP principle promotes the reuse of code and design by allowing a class to inherit the properties and behaviors of another class?
+	a. Encapsulation
+	b. Polymorphism
+	c. Inheritance
+	d. Abstraction
+
+3. In OOP, what is the term for creating a new class by combining attributes and behaviors from existing classes?
+	a. Inheritance
+	b. Polymorphism
+	c. Encapsulation
+	d. Abstraction
+
+4. What is the concept in OOP that allows a class to have multiple methods with the same name but different parameters?
+	a. Inheritance
+	b. Encapsulation
+	c. Polymorphism
+	d. Abstraction
+
+5. Which of the following is NOT a fundamental OOP concept?
+	a. Inheritance
+	b. Encapsulation
+	c. Iteration
+	d. Abstraction
+
+6. What is the process of creating an instance of a class in OOP?
+	a. Inheritance
+	b. Abstraction
+	c. Instantiation
+	d. Polymorphism
+
+7. What is the term for the ability of a class to have multiple methods with the same name but different implementations?
+	a. Inheritance
+	b. Encapsulation
+	c. Overloading
+	d. Overriding
+
+8. Which OOP concept allows a class to provide a generic interface to a group of related classes?
+	a. Inheritance
+	b. Abstraction
+	c. Polymorphism
+	d. Encapsulation
+
+9. What is the term for restricting access to certain members of a class so that they cannot be accessed directly from outside the class?
+	a. Inheritance
+	b. Encapsulation
+	c. Abstraction
+	d. Polymorphism
+
+10. In OOP, what is the process of creating a new class that inherits properties and behaviors from an existing class?
+	a. Aggregation
+	b. Composition
+	c. Encapsulation
+	d. Inheritance
+
+11. What is the concept in OOP that allows a class to have multiple methods with the same name but different parameters?
+	a. Inheritance
+	b. Encapsulation
+	c. Polymorphism
+	d. Abstraction
+	
+12. What is the primary purpose of an abstract class in OOP?
+	a. To create objects directly
+	b. To provide a common base class for other classes
+	c. To hide the implementation details of a class
+	d. To implement interfaces
+	
+13. Which OOP concept is related to the ability of a class to have more than one method with the same name and parameters, but different behavior?
+	a. Abstraction
+	b. Encapsulation
+	c. Polymorphism
+	d. Inheritance
+	
+14. What is the role of constructors in OOP?
+	a. To destroy objects when they are no longer needed
+	b. To initialize the attributes of an object when it is created
+	c. To provide a blueprint for creating new classes
+	d. To define the public interface of a class
+	
+15. Which OOP concept is responsible for combining data and the methods that operate on the data into a single unit?
+	a. Abstraction
+	b. Encapsulation
+	c. Polymorphism
+	d. Inheritance
+	
+16. In OOP, what is the term for a class that inherits properties and behaviors from more than one class?
+	a. Multiclass
+	b. Multiple inheritance
+	c. Composite class
+	d. Subclass
+	
+17. What is the primary purpose of an interface in OOP?
+	a. To provide a blueprint for creating objects
+	b. To define a set of methods that must be implemented by a class
+	c. To hide the implementation details of a class
+	d. To allow multiple inheritance
+	
+18 In OOP, what does the term "polymorphism" mean?
+	a. The ability of a class to hide its implementation details
+	b. The ability of a class to have multiple methods with the same name
+	c. The ability of a class to have multiple attributes
+	d. The ability of a class to inherit from another class
+
+
+Answers:
+1 c. Data hiding and protection
+2 c. Inheritance
+3 a. Inheritance
+4 c. Polymorphism
+5 c. Iteration
+6 c. Instantiation
+7 c. Overloading
+8 c. Polymorphism
+9 b. Encapsulation
+10 d. Inheritance
+
+11 c. Polymorphism
+12 b. To provide a common base class for other classes
+13 c. Polymorphism
+14 b. To initialize the attributes of an object when it is created
+15 b. Encapsulation
+16 b. Multiple inheritance
+17 b. To define a set of methods that must be implemented by a class
+18 b. The ability of a class to have multiple methods with the same name
+ 
+
