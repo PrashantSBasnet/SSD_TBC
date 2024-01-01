@@ -99,6 +99,36 @@ O(nk)
 
 ---Key Highlights---
 
+1. Compare the Worst Case of each sorting algorithm. 
+2. Compare the Worst Case of each searching algorithm.
+3. What is the most efficient/ sorting algorithm for smaller data sets?
+4. What is the most efficient sorting algorithm for larger data sets?
+
+5. Which sorting algorithm has a worst-case time complexity of O(n^2) in its basic form "fundamental version"? 
+	a.Quicksort	 	b.Mergesort 	c.Heapsort 	d.Bubblesort
+	
+6. In the worst-case scenario, which of the following sorting algorithms exhibits a time complexity of O(n log n)?
+	a.Bubblesort  	b.Insertion sort  	c.Quicksort  	d.Counting sort
+	
+7. Which sorting algorithm is known for its stable O(n log n) performance in the worst case?
+	a. Bubblesort	b. Mergesort	c. Heapsort		d. Shellsort
+
+8. What is the worst-case time complexity of the quicksort algorithm when choosing the pivot poorly in each partitioning step?
+	a. O(n)			b. O(n log n)	c. O(n^2)		d. O(log n)
+	
+9. In the worst-case scenario, which of the following sorting algorithms has a time complexity that depends on the initial order of the input data?
+	a. Mergesort	b. Shellsort	c. Bubblesort	d. Radix sort
+	
+10. Which sorting algorithm has a worst-case time complexity of O(n log n) but may require additional space for its operation?
+	a. Bubblesort	b. Quicksort	c. Radix sort	d. Mergesort
+
+11. In the worst case, which of the following sorting algorithms has a time complexity of O(n^2) but can be optimized with adaptive techniques?
+	a. Insertion sort	b. Shellsort	c. Mergesort	d. Heapsort
+	
+ 
+
+
+
 Insertion Sort/Bubble Sort 			 |				Merge Sort/Quick Sort
 -> small no. of elements 			 | 				->	larger no. of elements
 
@@ -149,7 +179,7 @@ Average Time Complexity: Sorting in Quick and Merge Sort
 
 **********************************************************
 
-Notation						Name 						(put n=32)
+Notation						Name 						        (put n=32)
 O(1)							constant time				         1
 O(log n)  						logarithmic					 	     5
 O(n)							linear						 		 32
@@ -157,3 +187,14 @@ O(n log n)						linearithmic				         160
 O(n^2)							quadratic					 		 1024						nested for loop
 O(n^3)							cubic					        	 32768						nested for loop 
 O(2^n) 							exponential 				         4294967296
+
+
+-----------------------
+Answers: 
+1 d. Bubblesort
+2 c. Quicksort
+3 b. Mergesort
+4 c. O(n^2)
+5 c. Bubblesort
+6 d. Mergesort
+7 a. Insertion sort
