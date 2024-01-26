@@ -17,11 +17,27 @@
       --InstantiationException
       --SQLException
       --ClassNotFoundException	
+      --InteruptedException
+      --NoSuchFieldException
+      --NoSuchMethodException
+
+
+
       
   2. Unchecked Exception
   -"unchecked" because the compiler does not enforce any explicit handling or catching of these exceptions
-  - They are not checked at compile-time, so if you don’t handle them, your program might compile without any errors, but they can still occur during runtime, leading to unexpected program termination or issues
-  - Example: NullPointerException
+  - They are not checked at compile-time, so if you donâ€™t handle them, your program might compile without any errors, but they can still occur during runtime, leading to unexpected program termination or issues
+  - Example: 	NullPointerException
+            	-ArithmeticException
+	    	-ArrayIndexOutOfBoundsException
+           	-NullPointerException
+ 	    	-NumberFormatException
+	   	-RunTimeException
+		-StringIndexOutOfBoundsException
+		-IllegalArgumentException
+		-IllegalStateException
+		
+		 
  
  ----------------------------------------------------------------------------------------
  
