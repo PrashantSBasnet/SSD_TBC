@@ -2,7 +2,7 @@ Linked HashMap
 
 Map(I)
 	--HashMap(C)
-			---LinedHashMap(C)
+			---LinkedHashMap(C)
 			
      					  			LinkedHashMap									HashMap
 Underlying DataStructure:           HashTable + HashMap								HashTable
