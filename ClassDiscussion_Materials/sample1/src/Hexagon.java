@@ -13,6 +13,15 @@ public class Hexagon extends Shape {
         System.out.println("We changed the local variable's value " + moreInformationOfTheShape);
     }
 
+    @Override
+    public Integer getNoOfSides() {
+        /**
+         *         "super" returns the method defined in the parent class
+          */
+        return super.getNoOfSides();
+
+    }
+
 
     public static void changeInformationNotAllowed(){
         //System.out.println(moreInformationOfTheShape);  //this is not allowed, you have to write getters and setter to do so because the method is static

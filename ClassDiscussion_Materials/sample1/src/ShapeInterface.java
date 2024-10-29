@@ -1,5 +1,8 @@
 import java.util.List;
 
+/**
+ * Interface to list down the methods
+ */
 public interface ShapeInterface {
 
      //can only have static final variables
@@ -12,6 +15,7 @@ public interface ShapeInterface {
      //Interfaces can have default method with a body
      default String displayPurpose(){
           System.out.println("Hello world!");
+          System.out.println(ShapeInterface.purpose);
           return purpose;
      }
 
