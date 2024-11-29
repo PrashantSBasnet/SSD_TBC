@@ -1,0 +1,42 @@
+Data Structure,Maintains Insertion Order?,,
+HashSet,No,,
+HashMap,No,,
+Hashtable,No,,
+TreeSet,No (sorted order),,
+TreeMap,No (sorted by keys),,
+PriorityQueue,No (sorted by priority),,
+,,,
+,,,
+,,,
+Data Structure,Maintains Insertion Order?,Explanation,
+ArrayList,Yes,"Elements are stored in an internal array, and their relative positions are preserved.",
+LinkedList,Yes,"Elements are stored as nodes, maintaining their sequence based on insertion.",
+LinkedHashSet,Yes,Combines hash table and linked list features to store unique elements in insertion order.,
+LinkedHashMap,Yes,Maintains key-value pairs in the order they were inserted.,
+,,,
+,,,
+Data Structure,Operation,Average Case,Worst Case
+ArrayList,Searching,O(n)O,O(n)
+,Insertion,O(1) (end),O(n) (general)
+,Deletion,O(n),O(n)
+LinkedList,Searching,O(n),O(n)
+,Insertion,O(1) (with node reference),O(n) (general)
+,Deletion,O(1) (with node reference),O(n) (general)
+HashSet,Searching,O(1),O(n)
+,Insertion,O(1),O(n)
+,Deletion,O(1),O(n)
+LinkedHashSet,Searching,O(1),O(n)
+,Insertion,O(1),O(n)
+,Deletion,O(1),O(n)
+TreeSet,Searching,O(log⁡ n),O(log ⁡n)
+,Insertion,O(log ⁡n),O(log ⁡n)
+,Deletion,O(log ⁡n),O(log⁡ n)
+HashMap,Search (Key),O(1),O(n)
+,Insertion (Key-Value),O(1),O(n)
+,Deletion (Key),O(1),O(n)
+LinkedHashMap,Search (Key),O(1),O(n)
+,Insertion (Key-Value),O(1),O(n)
+,Deletion (Key),O(1),O(n)
+PriorityQueue,Search (Element),O(n),O(n)
+,Insertion,O(log ⁡n),O(log⁡ n)
+,Deletion (Min/Max),O(log ⁡n),O(log⁡ n)
