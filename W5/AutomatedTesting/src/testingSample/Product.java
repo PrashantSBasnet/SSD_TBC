@@ -16,7 +16,7 @@ public class Product {
 		return stockLevel !=0;
 	}
 	
-	public int setllProduct() throws Exception {
+	public int sellProduct() throws Exception {
 		if (stockLevel <=1) {
 			throw new Exception();
 		}
